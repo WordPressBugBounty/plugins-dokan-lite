@@ -11,21 +11,21 @@
     ),
     'versions' => array(
         'appsero/client' => array(
-            'pretty_version' => 'v2.0.2',
-            'version' => '2.0.2.0',
+            'pretty_version' => 'v2.0.3',
+            'version' => '2.0.3.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../appsero/client',
             'aliases' => array(),
-            'reference' => 'b61c3ab21df4d44f805ee9476f9d880f8370a36b',
+            'reference' => '575ecd2ddb3900bd2626771f12d5723b69175b60',
             'dev_requirement' => false,
         ),
         'appsero/updater' => array(
-            'pretty_version' => 'v2.2.0',
-            'version' => '2.2.0.0',
+            'pretty_version' => 'v2.3.0',
+            'version' => '2.3.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../appsero/updater',
             'aliases' => array(),
-            'reference' => '58be2387dea35ffbca41970186d2251a00b2c44a',
+            'reference' => '937c658f8a41b7739c5f4915f2a110aa6bf778da',
             'dev_requirement' => false,
         ),
         'jakeasmith/http_build_url' => array(

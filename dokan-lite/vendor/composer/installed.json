@@ -2,17 +2,17 @@
     "packages": [
         {
             "name": "appsero/client",
-            "version": "v2.0.2",
-            "version_normalized": "2.0.2.0",
+            "version": "v2.0.3",
+            "version_normalized": "2.0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Appsero/client.git",
-                "reference": "b61c3ab21df4d44f805ee9476f9d880f8370a36b"
+                "reference": "575ecd2ddb3900bd2626771f12d5723b69175b60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Appsero/client/zipball/b61c3ab21df4d44f805ee9476f9d880f8370a36b",
-                "reference": "b61c3ab21df4d44f805ee9476f9d880f8370a36b",
+                "url": "https://api.github.com/repos/Appsero/client/zipball/575ecd2ddb3900bd2626771f12d5723b69175b60",
+                "reference": "575ecd2ddb3900bd2626771f12d5723b69175b60",
                 "shasum": ""
             },
             "require": {
@@ -26,7 +26,7 @@
                 "tareq1988/wp-php-cs-fixer": "dev-master",
                 "wp-coding-standards/wpcs": "dev-develop"
             },
-            "time": "2024-01-30T08:15:01+00:00",
+            "time": "2024-09-18T04:41:01+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -53,26 +53,26 @@
             ],
             "support": {
                 "issues": "https://github.com/Appsero/client/issues",
-                "source": "https://github.com/Appsero/client/tree/v2.0.2"
+                "source": "https://github.com/Appsero/client/tree/v2.0.3"
             },
             "install-path": "../appsero/client"
         },
         {
             "name": "appsero/updater",
-            "version": "v2.2.0",
-            "version_normalized": "2.2.0.0",
+            "version": "v2.3.0",
+            "version_normalized": "2.3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Appsero/updater.git",
-                "reference": "58be2387dea35ffbca41970186d2251a00b2c44a"
+                "reference": "937c658f8a41b7739c5f4915f2a110aa6bf778da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Appsero/updater/zipball/58be2387dea35ffbca41970186d2251a00b2c44a",
-                "reference": "58be2387dea35ffbca41970186d2251a00b2c44a",
+                "url": "https://api.github.com/repos/Appsero/updater/zipball/937c658f8a41b7739c5f4915f2a110aa6bf778da",
+                "reference": "937c658f8a41b7739c5f4915f2a110aa6bf778da",
                 "shasum": ""
             },
-            "time": "2024-08-22T09:23:04+00:00",
+            "time": "2024-09-06T04:30:41+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -93,7 +93,7 @@
             "description": "Appsero client updater module",
             "support": {
                 "issues": "https://github.com/Appsero/updater/issues",
-                "source": "https://github.com/Appsero/updater/tree/v2.2.0"
+                "source": "https://github.com/Appsero/updater/tree/v2.3.0"
             },
             "install-path": "../appsero/updater"
         },
