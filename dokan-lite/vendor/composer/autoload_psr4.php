@@ -7,5 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'WeDevs\\Dokan\\' => array($baseDir . '/includes'),
-    'Appsero\\' => array($vendorDir . '/appsero/client/src', $vendorDir . '/appsero/updater/src'),
+    'Appsero\\' => array($vendorDir . '/appsero/updater/src', $vendorDir . '/appsero/client/src'),
 );
