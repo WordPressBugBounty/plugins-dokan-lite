@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit39d0f8a8c8baae84044b3a1903c01f8b
+class ComposerStaticInit7d4e7c9de1b4ebca08e80cc3c36ac0e0
 {
     public static $files = array (
         'b45b351e6b6f7487d819961fef2fda77' => __DIR__ . '/..' . '/jakeasmith/http_build_url/src/http_build_url.php',
@@ -30,8 +30,8 @@ class ComposerStaticInit39d0f8a8c8baae84044b3a1903c01f8b
         ),
         'Appsero\\' => 
         array (
-            0 => __DIR__ . '/..' . '/appsero/updater/src',
-            1 => __DIR__ . '/..' . '/appsero/client/src',
+            0 => __DIR__ . '/..' . '/appsero/client/src',
+            1 => __DIR__ . '/..' . '/appsero/updater/src',
         ),
     );
 
@@ -125,6 +125,7 @@ class ComposerStaticInit39d0f8a8c8baae84044b3a1903c01f8b
         'WeDevs\\Dokan\\Order\\Manager' => __DIR__ . '/../..' . '/includes/Order/Manager.php',
         'WeDevs\\Dokan\\Order\\MiscHooks' => __DIR__ . '/../..' . '/includes/Order/MiscHooks.php',
         'WeDevs\\Dokan\\Order\\OrderCache' => __DIR__ . '/../..' . '/includes/Order/OrderCache.php',
+        'WeDevs\\Dokan\\Order\\OrderEventListener' => __DIR__ . '/../..' . '/includes/Order/OrderEventListener.php',
         'WeDevs\\Dokan\\PageViews' => __DIR__ . '/../..' . '/includes/PageViews.php',
         'WeDevs\\Dokan\\Privacy' => __DIR__ . '/../..' . '/includes/Privacy.php',
         'WeDevs\\Dokan\\ProductCategory\\Categories' => __DIR__ . '/../..' . '/includes/ProductCategory/Categories.php',
@@ -290,9 +291,9 @@ class ComposerStaticInit39d0f8a8c8baae84044b3a1903c01f8b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit39d0f8a8c8baae84044b3a1903c01f8b::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit39d0f8a8c8baae84044b3a1903c01f8b::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit39d0f8a8c8baae84044b3a1903c01f8b::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit7d4e7c9de1b4ebca08e80cc3c36ac0e0::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit7d4e7c9de1b4ebca08e80cc3c36ac0e0::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit7d4e7c9de1b4ebca08e80cc3c36ac0e0::$classMap;
 
         }, null, ClassLoader::class);
     }

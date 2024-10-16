@@ -95,6 +95,7 @@ return array(
     'WeDevs\\Dokan\\Order\\Manager' => $baseDir . '/includes/Order/Manager.php',
     'WeDevs\\Dokan\\Order\\MiscHooks' => $baseDir . '/includes/Order/MiscHooks.php',
     'WeDevs\\Dokan\\Order\\OrderCache' => $baseDir . '/includes/Order/OrderCache.php',
+    'WeDevs\\Dokan\\Order\\OrderEventListener' => $baseDir . '/includes/Order/OrderEventListener.php',
     'WeDevs\\Dokan\\PageViews' => $baseDir . '/includes/PageViews.php',
     'WeDevs\\Dokan\\Privacy' => $baseDir . '/includes/Privacy.php',
     'WeDevs\\Dokan\\ProductCategory\\Categories' => $baseDir . '/includes/ProductCategory/Categories.php',
