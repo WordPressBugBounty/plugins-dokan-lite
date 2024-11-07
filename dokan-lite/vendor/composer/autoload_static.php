@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitff63d9dbf259f8d54120322117447eee
+class ComposerStaticInitc1ba377c87f92b8997580d8ed97a11f6
 {
     public static $files = array (
         'b45b351e6b6f7487d819961fef2fda77' => __DIR__ . '/..' . '/jakeasmith/http_build_url/src/http_build_url.php',
@@ -15,6 +15,7 @@ class ComposerStaticInitff63d9dbf259f8d54120322117447eee
     public static $prefixLengthsPsr4 = array (
         'W' => 
         array (
+            'WeDevs\\Dokan\\ThirdParty\\Packages\\' => 33,
             'WeDevs\\Dokan\\' => 13,
         ),
         'A' => 
@@ -24,14 +25,18 @@ class ComposerStaticInitff63d9dbf259f8d54120322117447eee
     );
 
     public static $prefixDirsPsr4 = array (
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/lib/packages',
+        ),
         'WeDevs\\Dokan\\' => 
         array (
             0 => __DIR__ . '/../..' . '/includes',
         ),
         'Appsero\\' => 
         array (
-            0 => __DIR__ . '/..' . '/appsero/client/src',
-            1 => __DIR__ . '/..' . '/appsero/updater/src',
+            0 => __DIR__ . '/..' . '/appsero/updater/src',
+            1 => __DIR__ . '/..' . '/appsero/client/src',
         ),
     );
 
@@ -68,6 +73,31 @@ class ComposerStaticInitff63d9dbf259f8d54120322117447eee
         'WeDevs\\Dokan\\Admin\\UserProfile' => __DIR__ . '/../..' . '/includes/Admin/UserProfile.php',
         'WeDevs\\Dokan\\Admin\\WithdrawLogExporter' => __DIR__ . '/../..' . '/includes/Admin/WithdrawLogExporter.php',
         'WeDevs\\Dokan\\Ajax' => __DIR__ . '/../..' . '/includes/Ajax.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\BaseQueryFilter' => __DIR__ . '/../..' . '/includes/Analytics/Reports/BaseQueryFilter.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\Categories\\QueryFilter' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Categories/QueryFilter.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\Coupons\\QueryFilter' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Coupons/QueryFilter.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\Coupons\\Stats\\QueryFilter' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Coupons/Stats/QueryFilter.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\Coupons\\Stats\\WcDataStore' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Coupons/Stats/WcDataStore.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\Customers\\QueryFilter' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Customers/QueryFilter.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\Customers\\Stats\\QueryFilter' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Customers/Stats/QueryFilter.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\DataStoreModifier' => __DIR__ . '/../..' . '/includes/Analytics/Reports/DataStoreModifier.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\OrderType' => __DIR__ . '/../..' . '/includes/Analytics/Reports/OrderType.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\Orders\\QueryFilter' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Orders/QueryFilter.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\Orders\\Stats\\DataStore' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Orders/Stats/DataStore.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\Orders\\Stats\\QueryFilter' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Orders/Stats/QueryFilter.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\Orders\\Stats\\ScheduleListener' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Orders/Stats/ScheduleListener.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\Orders\\Stats\\WcDataStore' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Orders/Stats/WcDataStore.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\Products\\QueryFilter' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Products/QueryFilter.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\Products\\Stats\\QueryFilter' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Products/Stats/QueryFilter.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\Products\\Stats\\WcDataStore' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Products/Stats/WcDataStore.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\Stock\\QueryFilter' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Stock/QueryFilter.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\Stock\\Stats\\WcDataStore' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Stock/Stats/WcDataStore.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\Taxes\\QueryFilter' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Taxes/QueryFilter.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\Taxes\\Stats\\QueryFilter' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Taxes/Stats/QueryFilter.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\Taxes\\Stats\\WcDataStore' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Taxes/Stats/WcDataStore.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\Variations\\QueryFilter' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Variations/QueryFilter.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\Variations\\Stats\\QueryFilter' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Variations/Stats/QueryFilter.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\WcSqlQuery' => __DIR__ . '/../..' . '/includes/Analytics/Reports/WcSqlQuery.php',
         'WeDevs\\Dokan\\Assets' => __DIR__ . '/../..' . '/includes/Assets.php',
         'WeDevs\\Dokan\\BackgroundProcess\\Manager' => __DIR__ . '/../..' . '/includes/BackgroundProcess/Manager.php',
         'WeDevs\\Dokan\\BackgroundProcess\\RewriteVariableProductsAuthor' => __DIR__ . '/../..' . '/includes/BackgroundProcess/RewriteVariableProductsAuthor.php',
@@ -82,6 +112,7 @@ class ComposerStaticInitff63d9dbf259f8d54120322117447eee
         'WeDevs\\Dokan\\CatalogMode\\Helper' => __DIR__ . '/../..' . '/includes/CatalogMode/Helper.php',
         'WeDevs\\Dokan\\CatalogMode\\Hooks' => __DIR__ . '/../..' . '/includes/CatalogMode/Hooks.php',
         'WeDevs\\Dokan\\Commission' => __DIR__ . '/../..' . '/includes/Commission.php',
+        'WeDevs\\Dokan\\Contracts\\Hookable' => __DIR__ . '/../..' . '/includes/Contracts/Hookable.php',
         'WeDevs\\Dokan\\Core' => __DIR__ . '/../..' . '/includes/Core.php',
         'WeDevs\\Dokan\\Customizer' => __DIR__ . '/../..' . '/includes/Customizer.php',
         'WeDevs\\Dokan\\Customizer\\HeadingControl' => __DIR__ . '/../..' . '/includes/Customizer/HeadingControl.php',
@@ -96,6 +127,17 @@ class ComposerStaticInitff63d9dbf259f8d54120322117447eee
         'WeDevs\\Dokan\\Dashboard\\Templates\\ReverseWithdrawal' => __DIR__ . '/../..' . '/includes/Dashboard/Templates/ReverseWithdrawal.php',
         'WeDevs\\Dokan\\Dashboard\\Templates\\Settings' => __DIR__ . '/../..' . '/includes/Dashboard/Templates/Settings.php',
         'WeDevs\\Dokan\\Dashboard\\Templates\\Withdraw' => __DIR__ . '/../..' . '/includes/Dashboard/Templates/Withdraw.php',
+        'WeDevs\\Dokan\\DependencyManagement\\BaseServiceProvider' => __DIR__ . '/../..' . '/includes/DependencyManagement/BaseServiceProvider.php',
+        'WeDevs\\Dokan\\DependencyManagement\\BootableServiceProvider' => __DIR__ . '/../..' . '/includes/DependencyManagement/BootableServiceProvider.php',
+        'WeDevs\\Dokan\\DependencyManagement\\Container' => __DIR__ . '/../..' . '/includes/DependencyManagement/Container.php',
+        'WeDevs\\Dokan\\DependencyManagement\\ContainerException' => __DIR__ . '/../..' . '/includes/DependencyManagement/ContainerException.php',
+        'WeDevs\\Dokan\\DependencyManagement\\Definition' => __DIR__ . '/../..' . '/includes/DependencyManagement/Definition.php',
+        'WeDevs\\Dokan\\DependencyManagement\\Providers\\AdminServiceProvider' => __DIR__ . '/../..' . '/includes/DependencyManagement/Providers/AdminServiceProvider.php',
+        'WeDevs\\Dokan\\DependencyManagement\\Providers\\AjaxServiceProvider' => __DIR__ . '/../..' . '/includes/DependencyManagement/Providers/AjaxServiceProvider.php',
+        'WeDevs\\Dokan\\DependencyManagement\\Providers\\AnalyticsServiceProvider' => __DIR__ . '/../..' . '/includes/DependencyManagement/Providers/AnalyticsServiceProvider.php',
+        'WeDevs\\Dokan\\DependencyManagement\\Providers\\CommonServiceProvider' => __DIR__ . '/../..' . '/includes/DependencyManagement/Providers/CommonServiceProvider.php',
+        'WeDevs\\Dokan\\DependencyManagement\\Providers\\FrontendServiceProvider' => __DIR__ . '/../..' . '/includes/DependencyManagement/Providers/FrontendServiceProvider.php',
+        'WeDevs\\Dokan\\DependencyManagement\\Providers\\ServiceProvider' => __DIR__ . '/../..' . '/includes/DependencyManagement/Providers/ServiceProvider.php',
         'WeDevs\\Dokan\\DummyData\\Importer' => __DIR__ . '/../..' . '/includes/DummyData/Importer.php',
         'WeDevs\\Dokan\\Emails\\ContactSeller' => __DIR__ . '/../..' . '/includes/Emails/ContactSeller.php',
         'WeDevs\\Dokan\\Emails\\Manager' => __DIR__ . '/../..' . '/includes/Emails/Manager.php',
@@ -198,6 +240,45 @@ class ComposerStaticInitff63d9dbf259f8d54120322117447eee
         'WeDevs\\Dokan\\ThemeSupport\\Rehub' => __DIR__ . '/../..' . '/includes/ThemeSupport/Rehub.php',
         'WeDevs\\Dokan\\ThemeSupport\\Storefront' => __DIR__ . '/../..' . '/includes/ThemeSupport/Storefront.php',
         'WeDevs\\Dokan\\ThemeSupport\\TwentyTwenty' => __DIR__ . '/../..' . '/includes/ThemeSupport/TwentyTwenty.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Argument\\ArgumentInterface' => __DIR__ . '/../..' . '/lib/packages/League/Container/Argument/ArgumentInterface.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Argument\\ArgumentResolverInterface' => __DIR__ . '/../..' . '/lib/packages/League/Container/Argument/ArgumentResolverInterface.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Argument\\ArgumentResolverTrait' => __DIR__ . '/../..' . '/lib/packages/League/Container/Argument/ArgumentResolverTrait.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Argument\\DefaultValueArgument' => __DIR__ . '/../..' . '/lib/packages/League/Container/Argument/DefaultValueArgument.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Argument\\DefaultValueInterface' => __DIR__ . '/../..' . '/lib/packages/League/Container/Argument/DefaultValueInterface.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Argument\\LiteralArgument' => __DIR__ . '/../..' . '/lib/packages/League/Container/Argument/LiteralArgument.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Argument\\LiteralArgumentInterface' => __DIR__ . '/../..' . '/lib/packages/League/Container/Argument/LiteralArgumentInterface.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Argument\\Literal\\ArrayArgument' => __DIR__ . '/../..' . '/lib/packages/League/Container/Argument/Literal/ArrayArgument.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Argument\\Literal\\BooleanArgument' => __DIR__ . '/../..' . '/lib/packages/League/Container/Argument/Literal/BooleanArgument.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Argument\\Literal\\CallableArgument' => __DIR__ . '/../..' . '/lib/packages/League/Container/Argument/Literal/CallableArgument.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Argument\\Literal\\FloatArgument' => __DIR__ . '/../..' . '/lib/packages/League/Container/Argument/Literal/FloatArgument.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Argument\\Literal\\IntegerArgument' => __DIR__ . '/../..' . '/lib/packages/League/Container/Argument/Literal/IntegerArgument.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Argument\\Literal\\ObjectArgument' => __DIR__ . '/../..' . '/lib/packages/League/Container/Argument/Literal/ObjectArgument.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Argument\\Literal\\StringArgument' => __DIR__ . '/../..' . '/lib/packages/League/Container/Argument/Literal/StringArgument.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Argument\\ResolvableArgument' => __DIR__ . '/../..' . '/lib/packages/League/Container/Argument/ResolvableArgument.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Argument\\ResolvableArgumentInterface' => __DIR__ . '/../..' . '/lib/packages/League/Container/Argument/ResolvableArgumentInterface.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Container' => __DIR__ . '/../..' . '/lib/packages/League/Container/Container.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\ContainerAwareInterface' => __DIR__ . '/../..' . '/lib/packages/League/Container/ContainerAwareInterface.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\ContainerAwareTrait' => __DIR__ . '/../..' . '/lib/packages/League/Container/ContainerAwareTrait.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\DefinitionContainerInterface' => __DIR__ . '/../..' . '/lib/packages/League/Container/DefinitionContainerInterface.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Definition\\Definition' => __DIR__ . '/../..' . '/lib/packages/League/Container/Definition/Definition.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Definition\\DefinitionAggregate' => __DIR__ . '/../..' . '/lib/packages/League/Container/Definition/DefinitionAggregate.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Definition\\DefinitionAggregateInterface' => __DIR__ . '/../..' . '/lib/packages/League/Container/Definition/DefinitionAggregateInterface.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Definition\\DefinitionInterface' => __DIR__ . '/../..' . '/lib/packages/League/Container/Definition/DefinitionInterface.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Exception\\ContainerException' => __DIR__ . '/../..' . '/lib/packages/League/Container/Exception/ContainerException.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Exception\\NotFoundException' => __DIR__ . '/../..' . '/lib/packages/League/Container/Exception/NotFoundException.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Inflector\\Inflector' => __DIR__ . '/../..' . '/lib/packages/League/Container/Inflector/Inflector.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Inflector\\InflectorAggregate' => __DIR__ . '/../..' . '/lib/packages/League/Container/Inflector/InflectorAggregate.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Inflector\\InflectorAggregateInterface' => __DIR__ . '/../..' . '/lib/packages/League/Container/Inflector/InflectorAggregateInterface.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\Inflector\\InflectorInterface' => __DIR__ . '/../..' . '/lib/packages/League/Container/Inflector/InflectorInterface.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\ReflectionContainer' => __DIR__ . '/../..' . '/lib/packages/League/Container/ReflectionContainer.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\ServiceProvider\\AbstractServiceProvider' => __DIR__ . '/../..' . '/lib/packages/League/Container/ServiceProvider/AbstractServiceProvider.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\ServiceProvider\\BootableServiceProviderInterface' => __DIR__ . '/../..' . '/lib/packages/League/Container/ServiceProvider/BootableServiceProviderInterface.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\ServiceProvider\\ServiceProviderAggregate' => __DIR__ . '/../..' . '/lib/packages/League/Container/ServiceProvider/ServiceProviderAggregate.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\ServiceProvider\\ServiceProviderAggregateInterface' => __DIR__ . '/../..' . '/lib/packages/League/Container/ServiceProvider/ServiceProviderAggregateInterface.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\League\\Container\\ServiceProvider\\ServiceProviderInterface' => __DIR__ . '/../..' . '/lib/packages/League/Container/ServiceProvider/ServiceProviderInterface.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\Psr\\Container\\ContainerExceptionInterface' => __DIR__ . '/../..' . '/lib/packages/Psr/Container/ContainerExceptionInterface.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\Psr\\Container\\ContainerInterface' => __DIR__ . '/../..' . '/lib/packages/Psr/Container/ContainerInterface.php',
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\Psr\\Container\\NotFoundExceptionInterface' => __DIR__ . '/../..' . '/lib/packages/Psr/Container/NotFoundExceptionInterface.php',
         'WeDevs\\Dokan\\Tracker' => __DIR__ . '/../..' . '/includes/Tracker.php',
         'WeDevs\\Dokan\\Traits\\AjaxResponseError' => __DIR__ . '/../..' . '/includes/Traits/AjaxResponseError.php',
         'WeDevs\\Dokan\\Traits\\ChainableContainer' => __DIR__ . '/../..' . '/includes/Traits/ChainableContainer.php',
@@ -237,6 +318,7 @@ class ComposerStaticInitff63d9dbf259f8d54120322117447eee
         'WeDevs\\Dokan\\Upgrade\\Upgrades\\V_2_9_4' => __DIR__ . '/../..' . '/includes/Upgrade/Upgrades/V_2_9_4.php',
         'WeDevs\\Dokan\\Upgrade\\Upgrades\\V_3_0_10' => __DIR__ . '/../..' . '/includes/Upgrade/Upgrades/V_3_0_10.php',
         'WeDevs\\Dokan\\Upgrade\\Upgrades\\V_3_0_4' => __DIR__ . '/../..' . '/includes/Upgrade/Upgrades/V_3_0_4.php',
+        'WeDevs\\Dokan\\Upgrade\\Upgrades\\V_3_13_0' => __DIR__ . '/../..' . '/includes/Upgrade/Upgrades/V_3_13_0.php',
         'WeDevs\\Dokan\\Upgrade\\Upgrades\\V_3_1_0' => __DIR__ . '/../..' . '/includes/Upgrade/Upgrades/V_3_1_0.php',
         'WeDevs\\Dokan\\Upgrade\\Upgrades\\V_3_1_1' => __DIR__ . '/../..' . '/includes/Upgrade/Upgrades/V_3_1_1.php',
         'WeDevs\\Dokan\\Upgrade\\Upgrades\\V_3_2_12' => __DIR__ . '/../..' . '/includes/Upgrade/Upgrades/V_3_2_12.php',
@@ -291,9 +373,9 @@ class ComposerStaticInitff63d9dbf259f8d54120322117447eee
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitff63d9dbf259f8d54120322117447eee::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitff63d9dbf259f8d54120322117447eee::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitff63d9dbf259f8d54120322117447eee::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitc1ba377c87f92b8997580d8ed97a11f6::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitc1ba377c87f92b8997580d8ed97a11f6::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitc1ba377c87f92b8997580d8ed97a11f6::$classMap;
 
         }, null, ClassLoader::class);
     }
