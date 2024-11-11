@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitc1ba377c87f92b8997580d8ed97a11f6
+class ComposerStaticInitc189ccd41ca44d6546868d15ded2d279
 {
     public static $files = array (
         'b45b351e6b6f7487d819961fef2fda77' => __DIR__ . '/..' . '/jakeasmith/http_build_url/src/http_build_url.php',
@@ -35,8 +35,8 @@ class ComposerStaticInitc1ba377c87f92b8997580d8ed97a11f6
         ),
         'Appsero\\' => 
         array (
-            0 => __DIR__ . '/..' . '/appsero/updater/src',
-            1 => __DIR__ . '/..' . '/appsero/client/src',
+            0 => __DIR__ . '/..' . '/appsero/client/src',
+            1 => __DIR__ . '/..' . '/appsero/updater/src',
         ),
     );
 
@@ -373,9 +373,9 @@ class ComposerStaticInitc1ba377c87f92b8997580d8ed97a11f6
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitc1ba377c87f92b8997580d8ed97a11f6::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitc1ba377c87f92b8997580d8ed97a11f6::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitc1ba377c87f92b8997580d8ed97a11f6::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitc189ccd41ca44d6546868d15ded2d279::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitc189ccd41ca44d6546868d15ded2d279::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitc189ccd41ca44d6546868d15ded2d279::$classMap;
 
         }, null, ClassLoader::class);
     }
