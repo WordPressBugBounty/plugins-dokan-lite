@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitc189ccd41ca44d6546868d15ded2d279
+class ComposerStaticInit9d6fc1397b674743bb3870a0085b5819
 {
     public static $files = array (
         'b45b351e6b6f7487d819961fef2fda77' => __DIR__ . '/..' . '/jakeasmith/http_build_url/src/http_build_url.php',
@@ -112,6 +112,32 @@ class ComposerStaticInitc189ccd41ca44d6546868d15ded2d279
         'WeDevs\\Dokan\\CatalogMode\\Helper' => __DIR__ . '/../..' . '/includes/CatalogMode/Helper.php',
         'WeDevs\\Dokan\\CatalogMode\\Hooks' => __DIR__ . '/../..' . '/includes/CatalogMode/Hooks.php',
         'WeDevs\\Dokan\\Commission' => __DIR__ . '/../..' . '/includes/Commission.php',
+        'WeDevs\\Dokan\\Commission\\Calculator' => __DIR__ . '/../..' . '/includes/Commission/Calculator.php',
+        'WeDevs\\Dokan\\Commission\\FormulaFactory' => __DIR__ . '/../..' . '/includes/Commission/FormulaFactory.php',
+        'WeDevs\\Dokan\\Commission\\Formula\\AbstractFormula' => __DIR__ . '/../..' . '/includes/Commission/Formula/AbstractFormula.php',
+        'WeDevs\\Dokan\\Commission\\Formula\\CategoryBased' => __DIR__ . '/../..' . '/includes/Commission/Formula/CategoryBased.php',
+        'WeDevs\\Dokan\\Commission\\Formula\\Combine' => __DIR__ . '/../..' . '/includes/Commission/Formula/Combine.php',
+        'WeDevs\\Dokan\\Commission\\Formula\\Fixed' => __DIR__ . '/../..' . '/includes/Commission/Formula/Fixed.php',
+        'WeDevs\\Dokan\\Commission\\Formula\\Flat' => __DIR__ . '/../..' . '/includes/Commission/Formula/Flat.php',
+        'WeDevs\\Dokan\\Commission\\Formula\\Percentage' => __DIR__ . '/../..' . '/includes/Commission/Formula/Percentage.php',
+        'WeDevs\\Dokan\\Commission\\Model\\Commission' => __DIR__ . '/../..' . '/includes/Commission/Model/Commission.php',
+        'WeDevs\\Dokan\\Commission\\Model\\Setting' => __DIR__ . '/../..' . '/includes/Commission/Model/Setting.php',
+        'WeDevs\\Dokan\\Commission\\Settings\\Builder' => __DIR__ . '/../..' . '/includes/Commission/Settings/Builder.php',
+        'WeDevs\\Dokan\\Commission\\Settings\\DefaultSetting' => __DIR__ . '/../..' . '/includes/Commission/Settings/DefaultSetting.php',
+        'WeDevs\\Dokan\\Commission\\Settings\\GlobalSetting' => __DIR__ . '/../..' . '/includes/Commission/Settings/GlobalSetting.php',
+        'WeDevs\\Dokan\\Commission\\Settings\\InterfaceSetting' => __DIR__ . '/../..' . '/includes/Commission/Settings/InterfaceSetting.php',
+        'WeDevs\\Dokan\\Commission\\Settings\\OrderItem' => __DIR__ . '/../..' . '/includes/Commission/Settings/OrderItem.php',
+        'WeDevs\\Dokan\\Commission\\Settings\\Product' => __DIR__ . '/../..' . '/includes/Commission/Settings/Product.php',
+        'WeDevs\\Dokan\\Commission\\Settings\\Vendor' => __DIR__ . '/../..' . '/includes/Commission/Settings/Vendor.php',
+        'WeDevs\\Dokan\\Commission\\Strategies\\AbstractStrategy' => __DIR__ . '/../..' . '/includes/Commission/Strategies/AbstractStrategy.php',
+        'WeDevs\\Dokan\\Commission\\Strategies\\DefaultStrategy' => __DIR__ . '/../..' . '/includes/Commission/Strategies/DefaultStrategy.php',
+        'WeDevs\\Dokan\\Commission\\Strategies\\GlobalStrategy' => __DIR__ . '/../..' . '/includes/Commission/Strategies/GlobalStrategy.php',
+        'WeDevs\\Dokan\\Commission\\Strategies\\OrderItem' => __DIR__ . '/../..' . '/includes/Commission/Strategies/OrderItem.php',
+        'WeDevs\\Dokan\\Commission\\Strategies\\Product' => __DIR__ . '/../..' . '/includes/Commission/Strategies/Product.php',
+        'WeDevs\\Dokan\\Commission\\Strategies\\Vendor' => __DIR__ . '/../..' . '/includes/Commission/Strategies/Vendor.php',
+        'WeDevs\\Dokan\\Commission\\Upugrader\\Update_Category_Commission' => __DIR__ . '/../..' . '/includes/Commission/Upugrader/Update_Category_Commission.php',
+        'WeDevs\\Dokan\\Commission\\Upugrader\\Update_Product_Commission' => __DIR__ . '/../..' . '/includes/Commission/Upugrader/Update_Product_Commission.php',
+        'WeDevs\\Dokan\\Commission\\Upugrader\\Update_Vendor_Commission' => __DIR__ . '/../..' . '/includes/Commission/Upugrader/Update_Vendor_Commission.php',
         'WeDevs\\Dokan\\Contracts\\Hookable' => __DIR__ . '/../..' . '/includes/Contracts/Hookable.php',
         'WeDevs\\Dokan\\Core' => __DIR__ . '/../..' . '/includes/Core.php',
         'WeDevs\\Dokan\\Customizer' => __DIR__ . '/../..' . '/includes/Customizer.php',
@@ -154,6 +180,7 @@ class ComposerStaticInitc189ccd41ca44d6546868d15ded2d279
         'WeDevs\\Dokan\\Emails\\WithdrawCancelled' => __DIR__ . '/../..' . '/includes/Emails/WithdrawCancelled.php',
         'WeDevs\\Dokan\\Exceptions\\DokanException' => __DIR__ . '/../..' . '/includes/Exceptions/DokanException.php',
         'WeDevs\\Dokan\\FakeMailer' => __DIR__ . '/../..' . '/includes/FakeMailer.php',
+        'WeDevs\\Dokan\\Fees' => __DIR__ . '/../..' . '/includes/Fees.php',
         'WeDevs\\Dokan\\Frontend\\Frontend' => __DIR__ . '/../..' . '/includes/Frontend/Frontend.php',
         'WeDevs\\Dokan\\Frontend\\MyAccount\\BecomeAVendor' => __DIR__ . '/../..' . '/includes/Frontend/MyAccount/BecomeAVendor.php',
         'WeDevs\\Dokan\\Install\\Installer' => __DIR__ . '/../..' . '/includes/Install/Installer.php',
@@ -190,6 +217,7 @@ class ComposerStaticInitc189ccd41ca44d6546868d15ded2d279
         'WeDevs\\Dokan\\REST\\AdminNoticeController' => __DIR__ . '/../..' . '/includes/REST/AdminNoticeController.php',
         'WeDevs\\Dokan\\REST\\AdminReportController' => __DIR__ . '/../..' . '/includes/REST/AdminReportController.php',
         'WeDevs\\Dokan\\REST\\ChangeLogController' => __DIR__ . '/../..' . '/includes/REST/ChangeLogController.php',
+        'WeDevs\\Dokan\\REST\\CommissionControllerV1' => __DIR__ . '/../..' . '/includes/REST/CommissionControllerV1.php',
         'WeDevs\\Dokan\\REST\\DummyDataController' => __DIR__ . '/../..' . '/includes/REST/DummyDataController.php',
         'WeDevs\\Dokan\\REST\\Manager' => __DIR__ . '/../..' . '/includes/REST/Manager.php',
         'WeDevs\\Dokan\\REST\\OrderController' => __DIR__ . '/../..' . '/includes/REST/OrderController.php',
@@ -319,6 +347,7 @@ class ComposerStaticInitc189ccd41ca44d6546868d15ded2d279
         'WeDevs\\Dokan\\Upgrade\\Upgrades\\V_3_0_10' => __DIR__ . '/../..' . '/includes/Upgrade/Upgrades/V_3_0_10.php',
         'WeDevs\\Dokan\\Upgrade\\Upgrades\\V_3_0_4' => __DIR__ . '/../..' . '/includes/Upgrade/Upgrades/V_3_0_4.php',
         'WeDevs\\Dokan\\Upgrade\\Upgrades\\V_3_13_0' => __DIR__ . '/../..' . '/includes/Upgrade/Upgrades/V_3_13_0.php',
+        'WeDevs\\Dokan\\Upgrade\\Upgrades\\V_3_14_0' => __DIR__ . '/../..' . '/includes/Upgrade/Upgrades/V_3_14_0.php',
         'WeDevs\\Dokan\\Upgrade\\Upgrades\\V_3_1_0' => __DIR__ . '/../..' . '/includes/Upgrade/Upgrades/V_3_1_0.php',
         'WeDevs\\Dokan\\Upgrade\\Upgrades\\V_3_1_1' => __DIR__ . '/../..' . '/includes/Upgrade/Upgrades/V_3_1_1.php',
         'WeDevs\\Dokan\\Upgrade\\Upgrades\\V_3_2_12' => __DIR__ . '/../..' . '/includes/Upgrade/Upgrades/V_3_2_12.php',
@@ -349,7 +378,6 @@ class ComposerStaticInitc189ccd41ca44d6546868d15ded2d279
         'WeDevs\\Dokan\\Vendor\\Vendor' => __DIR__ . '/../..' . '/includes/Vendor/Vendor.php',
         'WeDevs\\Dokan\\Vendor\\VendorCache' => __DIR__ . '/../..' . '/includes/Vendor/VendorCache.php',
         'WeDevs\\Dokan\\Walkers\\Category' => __DIR__ . '/../..' . '/includes/Walkers/Category.php',
-        'WeDevs\\Dokan\\Walkers\\CategoryDropdownSingle' => __DIR__ . '/../..' . '/includes/Walkers/CategoryDropdownSingle.php',
         'WeDevs\\Dokan\\Walkers\\StoreCategory' => __DIR__ . '/../..' . '/includes/Walkers/StoreCategory.php',
         'WeDevs\\Dokan\\Walkers\\TaxonomyDropdown' => __DIR__ . '/../..' . '/includes/Walkers/TaxonomyDropdown.php',
         'WeDevs\\Dokan\\Widgets\\BestSellingProducts' => __DIR__ . '/../..' . '/includes/Widgets/BestSellingProducts.php',
@@ -373,9 +401,9 @@ class ComposerStaticInitc189ccd41ca44d6546868d15ded2d279
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitc189ccd41ca44d6546868d15ded2d279::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitc189ccd41ca44d6546868d15ded2d279::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitc189ccd41ca44d6546868d15ded2d279::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit9d6fc1397b674743bb3870a0085b5819::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit9d6fc1397b674743bb3870a0085b5819::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit9d6fc1397b674743bb3870a0085b5819::$classMap;
 
         }, null, ClassLoader::class);
     }
