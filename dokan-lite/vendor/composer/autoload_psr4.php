@@ -8,5 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'WeDevs\\Dokan\\ThirdParty\\Packages\\' => array($baseDir . '/lib/packages'),
     'WeDevs\\Dokan\\' => array($baseDir . '/includes'),
-    'Appsero\\' => array($vendorDir . '/appsero/updater/src', $vendorDir . '/appsero/client/src'),
+    'Appsero\\' => array($vendorDir . '/appsero/client/src', $vendorDir . '/appsero/updater/src'),
 );
