@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit69a6df0a54dfaccdb4d0bbbc92540703
+class ComposerStaticInit3e21e88c21b670c40604a9da41b2dc7e
 {
     public static $files = array (
         'b45b351e6b6f7487d819961fef2fda77' => __DIR__ . '/..' . '/jakeasmith/http_build_url/src/http_build_url.php',
@@ -51,7 +51,10 @@ class ComposerStaticInit69a6df0a54dfaccdb4d0bbbc92540703
         'WeDevs\\Dokan\\Abstracts\\DokanModel' => __DIR__ . '/../..' . '/includes/Abstracts/DokanModel.php',
         'WeDevs\\Dokan\\Abstracts\\DokanPromotion' => __DIR__ . '/../..' . '/includes/Abstracts/DokanPromotion.php',
         'WeDevs\\Dokan\\Abstracts\\DokanRESTAdminController' => __DIR__ . '/../..' . '/includes/Abstracts/DokanRESTAdminController.php',
+        'WeDevs\\Dokan\\Abstracts\\DokanRESTBaseController' => __DIR__ . '/../..' . '/includes/Abstracts/DokanRESTBaseController.php',
         'WeDevs\\Dokan\\Abstracts\\DokanRESTController' => __DIR__ . '/../..' . '/includes/Abstracts/DokanRESTController.php',
+        'WeDevs\\Dokan\\Abstracts\\DokanRESTCustomerController' => __DIR__ . '/../..' . '/includes/Abstracts/DokanRESTCustomerController.php',
+        'WeDevs\\Dokan\\Abstracts\\DokanRESTVendorController' => __DIR__ . '/../..' . '/includes/Abstracts/DokanRESTVendorController.php',
         'WeDevs\\Dokan\\Abstracts\\DokanShortcode' => __DIR__ . '/../..' . '/includes/Abstracts/DokanShortcode.php',
         'WeDevs\\Dokan\\Abstracts\\DokanUpgrader' => __DIR__ . '/../..' . '/includes/Abstracts/DokanUpgrader.php',
         'WeDevs\\Dokan\\Abstracts\\ProductStatusChanger' => __DIR__ . '/../..' . '/includes/Abstracts/ProductStatusChanger.php',
@@ -401,9 +404,9 @@ class ComposerStaticInit69a6df0a54dfaccdb4d0bbbc92540703
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit69a6df0a54dfaccdb4d0bbbc92540703::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit69a6df0a54dfaccdb4d0bbbc92540703::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit69a6df0a54dfaccdb4d0bbbc92540703::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit3e21e88c21b670c40604a9da41b2dc7e::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit3e21e88c21b670c40604a9da41b2dc7e::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit3e21e88c21b670c40604a9da41b2dc7e::$classMap;
 
         }, null, ClassLoader::class);
     }
