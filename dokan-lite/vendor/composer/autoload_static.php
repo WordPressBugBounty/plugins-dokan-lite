@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit4277161fb69dc4e15e51bfcebf11f100
+class ComposerStaticInit5121a04cc4f7467b1178c1323bfc8b0d
 {
     public static $files = array (
         'b45b351e6b6f7487d819961fef2fda77' => __DIR__ . '/..' . '/jakeasmith/http_build_url/src/http_build_url.php',
@@ -77,6 +77,7 @@ class ComposerStaticInit4277161fb69dc4e15e51bfcebf11f100
         'WeDevs\\Dokan\\Admin\\WithdrawLogExporter' => __DIR__ . '/../..' . '/includes/Admin/WithdrawLogExporter.php',
         'WeDevs\\Dokan\\Ajax' => __DIR__ . '/../..' . '/includes/Ajax.php',
         'WeDevs\\Dokan\\Analytics\\Reports\\BaseQueryFilter' => __DIR__ . '/../..' . '/includes/Analytics/Reports/BaseQueryFilter.php',
+        'WeDevs\\Dokan\\Analytics\\Reports\\CacheKeyModifier' => __DIR__ . '/../..' . '/includes/Analytics/Reports/CacheKeyModifier.php',
         'WeDevs\\Dokan\\Analytics\\Reports\\Categories\\QueryFilter' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Categories/QueryFilter.php',
         'WeDevs\\Dokan\\Analytics\\Reports\\Coupons\\QueryFilter' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Coupons/QueryFilter.php',
         'WeDevs\\Dokan\\Analytics\\Reports\\Coupons\\Stats\\QueryFilter' => __DIR__ . '/../..' . '/includes/Analytics/Reports/Coupons/Stats/QueryFilter.php',
@@ -404,9 +405,9 @@ class ComposerStaticInit4277161fb69dc4e15e51bfcebf11f100
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit4277161fb69dc4e15e51bfcebf11f100::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit4277161fb69dc4e15e51bfcebf11f100::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit4277161fb69dc4e15e51bfcebf11f100::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit5121a04cc4f7467b1178c1323bfc8b0d::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit5121a04cc4f7467b1178c1323bfc8b0d::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit5121a04cc4f7467b1178c1323bfc8b0d::$classMap;
 
         }, null, ClassLoader::class);
     }

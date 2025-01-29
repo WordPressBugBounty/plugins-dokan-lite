@@ -42,6 +42,7 @@ return array(
     'WeDevs\\Dokan\\Admin\\WithdrawLogExporter' => $baseDir . '/includes/Admin/WithdrawLogExporter.php',
     'WeDevs\\Dokan\\Ajax' => $baseDir . '/includes/Ajax.php',
     'WeDevs\\Dokan\\Analytics\\Reports\\BaseQueryFilter' => $baseDir . '/includes/Analytics/Reports/BaseQueryFilter.php',
+    'WeDevs\\Dokan\\Analytics\\Reports\\CacheKeyModifier' => $baseDir . '/includes/Analytics/Reports/CacheKeyModifier.php',
     'WeDevs\\Dokan\\Analytics\\Reports\\Categories\\QueryFilter' => $baseDir . '/includes/Analytics/Reports/Categories/QueryFilter.php',
     'WeDevs\\Dokan\\Analytics\\Reports\\Coupons\\QueryFilter' => $baseDir . '/includes/Analytics/Reports/Coupons/QueryFilter.php',
     'WeDevs\\Dokan\\Analytics\\Reports\\Coupons\\Stats\\QueryFilter' => $baseDir . '/includes/Analytics/Reports/Coupons/Stats/QueryFilter.php',
