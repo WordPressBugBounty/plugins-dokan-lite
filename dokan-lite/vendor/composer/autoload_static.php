@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit5121a04cc4f7467b1178c1323bfc8b0d
+class ComposerStaticInit6a657eac8bbca8bc3e8cf80e6f08fca0
 {
     public static $files = array (
         'b45b351e6b6f7487d819961fef2fda77' => __DIR__ . '/..' . '/jakeasmith/http_build_url/src/http_build_url.php',
@@ -35,8 +35,8 @@ class ComposerStaticInit5121a04cc4f7467b1178c1323bfc8b0d
         ),
         'Appsero\\' => 
         array (
-            0 => __DIR__ . '/..' . '/appsero/client/src',
-            1 => __DIR__ . '/..' . '/appsero/updater/src',
+            0 => __DIR__ . '/..' . '/appsero/updater/src',
+            1 => __DIR__ . '/..' . '/appsero/client/src',
         ),
     );
 
@@ -211,6 +211,7 @@ class ComposerStaticInit5121a04cc4f7467b1178c1323bfc8b0d
         'WeDevs\\Dokan\\ProductSections\\Latest' => __DIR__ . '/../..' . '/includes/ProductSections/Latest.php',
         'WeDevs\\Dokan\\ProductSections\\Manager' => __DIR__ . '/../..' . '/includes/ProductSections/Manager.php',
         'WeDevs\\Dokan\\ProductSections\\TopRated' => __DIR__ . '/../..' . '/includes/ProductSections/TopRated.php',
+        'WeDevs\\Dokan\\ProductStatusRollback' => __DIR__ . '/../..' . '/includes/ProductStatusRollback.php',
         'WeDevs\\Dokan\\Product\\Hooks' => __DIR__ . '/../..' . '/includes/Product/Hooks.php',
         'WeDevs\\Dokan\\Product\\Manager' => __DIR__ . '/../..' . '/includes/Product/Manager.php',
         'WeDevs\\Dokan\\Product\\ProductAttribute' => __DIR__ . '/../..' . '/includes/Product/ProductAttribute.php',
@@ -405,9 +406,9 @@ class ComposerStaticInit5121a04cc4f7467b1178c1323bfc8b0d
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit5121a04cc4f7467b1178c1323bfc8b0d::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit5121a04cc4f7467b1178c1323bfc8b0d::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit5121a04cc4f7467b1178c1323bfc8b0d::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit6a657eac8bbca8bc3e8cf80e6f08fca0::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit6a657eac8bbca8bc3e8cf80e6f08fca0::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit6a657eac8bbca8bc3e8cf80e6f08fca0::$classMap;
 
         }, null, ClassLoader::class);
     }
