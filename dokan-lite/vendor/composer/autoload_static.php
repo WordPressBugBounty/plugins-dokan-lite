@@ -258,6 +258,7 @@ class ComposerStaticInit6a657eac8bbca8bc3e8cf80e6f08fca0
         'WeDevs\\Dokan\\Rewrites' => __DIR__ . '/../..' . '/includes/Rewrites.php',
         'WeDevs\\Dokan\\Shipping\\Hooks' => __DIR__ . '/../..' . '/includes/Shipping/Hooks.php',
         'WeDevs\\Dokan\\Shortcodes\\BestSellingProduct' => __DIR__ . '/../..' . '/includes/Shortcodes/BestSellingProduct.php',
+        'WeDevs\\Dokan\\Shortcodes\\CustomerMigration' => __DIR__ . '/../..' . '/includes/Shortcodes/CustomerMigration.php',
         'WeDevs\\Dokan\\Shortcodes\\Dashboard' => __DIR__ . '/../..' . '/includes/Shortcodes/Dashboard.php',
         'WeDevs\\Dokan\\Shortcodes\\MyOrders' => __DIR__ . '/../..' . '/includes/Shortcodes/MyOrders.php',
         'WeDevs\\Dokan\\Shortcodes\\Shortcodes' => __DIR__ . '/../..' . '/includes/Shortcodes/Shortcodes.php',

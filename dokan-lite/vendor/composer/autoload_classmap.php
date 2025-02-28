@@ -223,6 +223,7 @@ return array(
     'WeDevs\\Dokan\\Rewrites' => $baseDir . '/includes/Rewrites.php',
     'WeDevs\\Dokan\\Shipping\\Hooks' => $baseDir . '/includes/Shipping/Hooks.php',
     'WeDevs\\Dokan\\Shortcodes\\BestSellingProduct' => $baseDir . '/includes/Shortcodes/BestSellingProduct.php',
+    'WeDevs\\Dokan\\Shortcodes\\CustomerMigration' => $baseDir . '/includes/Shortcodes/CustomerMigration.php',
     'WeDevs\\Dokan\\Shortcodes\\Dashboard' => $baseDir . '/includes/Shortcodes/Dashboard.php',
     'WeDevs\\Dokan\\Shortcodes\\MyOrders' => $baseDir . '/includes/Shortcodes/MyOrders.php',
     'WeDevs\\Dokan\\Shortcodes\\Shortcodes' => $baseDir . '/includes/Shortcodes/Shortcodes.php',
