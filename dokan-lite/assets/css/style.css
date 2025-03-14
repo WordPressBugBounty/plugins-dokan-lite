@@ -5723,6 +5723,9 @@ p.vendor-customer-registration .radio:hover {
   cursor: pointer;
   color: #526b6f;
 }
+.woocommerce-form-register:has(.vendor-customer-registration) {
+  height: fit-content !important;
+}
 .dokan-popup-content {
   padding: 18px;
 }

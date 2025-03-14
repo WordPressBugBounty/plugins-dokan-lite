@@ -424,12 +424,11 @@ class Updater
     }
 
     public function validate_plugin_update_url($reply, $package) {
-        // Local file or remote?
-        if ( ! preg_match( '!^(http|https|ftp)://!i', $package ) && file_exists( $package ) ) {
-            return $reply; // Must be a local file.
+        if ( strpos( $package, 'https://api.appsero.com' ) !== 0 ) {
+            return $reply; // Must be local files or other plugins that are not updated via Appsero.
         }
 
-	$response = wp_remote_get($package, ['method' => 'HEAD', 'redirection' => 5]);
+	    $response = wp_remote_get($package, ['method' => 'HEAD', 'redirection' => 5]);
 
         if (is_wp_error($response) || wp_remote_retrieve_response_code($response) != 200) {
     
