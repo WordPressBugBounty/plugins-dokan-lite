@@ -1,3 +1,53 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 20px;
+}
+.switch input {
+  display: none;
+}
+.switch input.enabled + .slider {
+  background-color: var(--dokan-toggle-active-color);
+}
+.switch input.enabled + .slider:before {
+  -webkit-transform: translateX(-22px);
+  -ms-transform: translateX(-22px);
+  transform: translateX(-22px);
+}
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--dokan-toggle-inactive-color);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  right: 3px;
+  bottom: 3px;
+  background-color: var(--dokan-toggle-color);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.switch .slider.round {
+  border-radius: 34px;
+}
+.switch .slider.round:before {
+  border-radius: 50%;
+}
+
+.swal2-title {
+  border-bottom: none!important;
+}
+
 *, ::before, ::after {
     --tw-border-spacing-x: 0;
     --tw-border-spacing-y: 0;
@@ -110,8 +160,20 @@
 .\!m-0 {
     margin: 0px !important
 }
+.m-0 {
+    margin: 0px
+}
+.\!mb-\[6px\] {
+    margin-bottom: 6px !important
+}
+.mb-4 {
+    margin-bottom: 1rem
+}
 .mb-5 {
     margin-bottom: 1.25rem
+}
+.block {
+    display: block
 }
 .flex {
     display: flex
@@ -121,6 +183,9 @@
 }
 .flex-col {
     flex-direction: column
+}
+.justify-between {
+    justify-content: space-between
 }
 .\!p-0 {
     padding: 0px !important
