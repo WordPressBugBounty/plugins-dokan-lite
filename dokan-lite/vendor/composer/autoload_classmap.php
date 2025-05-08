@@ -210,6 +210,7 @@ return array(
     'WeDevs\\Dokan\\Emails\\WithdrawApproved' => $baseDir . '/includes/Emails/WithdrawApproved.php',
     'WeDevs\\Dokan\\Emails\\WithdrawCancelled' => $baseDir . '/includes/Emails/WithdrawCancelled.php',
     'WeDevs\\Dokan\\Exceptions\\DokanException' => $baseDir . '/includes/Exceptions/DokanException.php',
+    'WeDevs\\Dokan\\Exceptions\\Handler' => $baseDir . '/includes/Exceptions/Handler.php',
     'WeDevs\\Dokan\\FakeMailer' => $baseDir . '/includes/FakeMailer.php',
     'WeDevs\\Dokan\\Fees' => $baseDir . '/includes/Fees.php',
     'WeDevs\\Dokan\\Frontend\\Frontend' => $baseDir . '/includes/Frontend/Frontend.php',

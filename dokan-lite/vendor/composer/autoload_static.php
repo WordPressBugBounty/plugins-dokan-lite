@@ -245,6 +245,7 @@ class ComposerStaticInit6a657eac8bbca8bc3e8cf80e6f08fca0
         'WeDevs\\Dokan\\Emails\\WithdrawApproved' => __DIR__ . '/../..' . '/includes/Emails/WithdrawApproved.php',
         'WeDevs\\Dokan\\Emails\\WithdrawCancelled' => __DIR__ . '/../..' . '/includes/Emails/WithdrawCancelled.php',
         'WeDevs\\Dokan\\Exceptions\\DokanException' => __DIR__ . '/../..' . '/includes/Exceptions/DokanException.php',
+        'WeDevs\\Dokan\\Exceptions\\Handler' => __DIR__ . '/../..' . '/includes/Exceptions/Handler.php',
         'WeDevs\\Dokan\\FakeMailer' => __DIR__ . '/../..' . '/includes/FakeMailer.php',
         'WeDevs\\Dokan\\Fees' => __DIR__ . '/../..' . '/includes/Fees.php',
         'WeDevs\\Dokan\\Frontend\\Frontend' => __DIR__ . '/../..' . '/includes/Frontend/Frontend.php',
