@@ -5319,6 +5319,13 @@ div.media-sidebar a.edit-attachment {
   .dokan-single-store .profile-frame .profile-info-box.profile-layout-default .profile-info-summery-wrapper {
     position: relative;
   }
+  .dokan-single-store .profile-frame .profile-info-box.profile-layout-default .profile-info-summery-wrapper .profile-info-summery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 370px;
+    padding: 25px 0 15px;
+  }
   .dokan-single-store .profile-frame .profile-info-box.profile-layout-default .profile-info-summery-wrapper .profile-info-summery .profile-info {
     padding: 5px 30px;
   }

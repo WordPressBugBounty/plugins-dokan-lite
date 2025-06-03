@@ -781,12 +781,16 @@ select {
   left: 0.25rem;
 }.dokan-layout .right-3 {
   left: 0.75rem;
+}.dokan-layout .right-6 {
+  left: 1.5rem;
 }.dokan-layout .top-0 {
   top: 0px;
 }.dokan-layout .top-0\.5 {
   top: 0.125rem;
 }.dokan-layout .top-1 {
   top: 0.25rem;
+}.dokan-layout .top-6 {
+  top: 1.5rem;
 }.dokan-layout .top-full {
   top: 100%;
 }.dokan-layout .z-0 {
@@ -857,6 +861,8 @@ select {
   margin-left: 5rem;
 }.dokan-layout .mr-4 {
   margin-left: 1rem;
+}.dokan-layout .mr-5 {
+  margin-left: 1.25rem;
 }.dokan-layout .mr-\[20px\] {
   margin-left: 20px;
 }.dokan-layout .mr-auto {
@@ -1281,6 +1287,8 @@ select {
   border-width: 0.957434px;
 }.dokan-layout .border-\[1px\] {
   border-width: 1px;
+}.dokan-layout .\!border-b-2 {
+  border-bottom-width: 2px !important;
 }.dokan-layout .\!border-b-\[1px\] {
   border-bottom-width: 1px !important;
 }.dokan-layout .\!border-r-\[1px\] {
@@ -1315,6 +1323,8 @@ select {
   border-style: dashed;
 }.dokan-layout .border-none {
   border-style: none;
+}.dokan-layout .\!border-dokan-btn {
+  border-color: var(--dokan-button-border-color, #7047EB) !important;
 }.dokan-layout .border-\[\#1a9ed4\] {
   --tw-border-opacity: 1;
   border-color: rgb(26 158 212 / var(--tw-border-opacity, 1));
@@ -1646,6 +1656,8 @@ select {
   line-height: 48px;
 }.dokan-layout .tracking-wide {
   letter-spacing: 0.025em;
+}.dokan-layout .\!text-dokan-primary {
+  color: var(--dokan-button-background-color, #7047EB) !important;
 }.dokan-layout .\!text-gray-800 {
   --tw-text-opacity: 1 !important;
   color: rgb(31 41 55 / var(--tw-text-opacity, 1)) !important;
@@ -1685,6 +1697,9 @@ select {
 }.dokan-layout .text-\[\#828282\] {
   --tw-text-opacity: 1;
   color: rgb(130 130 130 / var(--tw-text-opacity, 1));
+}.dokan-layout .text-\[\#bcbed5\] {
+  --tw-text-opacity: 1;
+  color: rgb(188 190 213 / var(--tw-text-opacity, 1));
 }.dokan-layout .text-amber-800 {
   --tw-text-opacity: 1;
   color: rgb(146 64 14 / var(--tw-text-opacity, 1));
@@ -2191,6 +2206,11 @@ select {
 }.dokan-layout .before\:content-\[\'\'\]::before {
   --tw-content: '';
   content: var(--tw-content);
+}.dokan-layout :is(.\*\:first\:\*\:border-transparent > *:first-child > *) {
+  border-color: transparent;
+}.dokan-layout :is(.\*\:first\:border-gray-200:first-child > *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
 }.dokan-layout .last\:mb-0:last-child {
   margin-bottom: 0px;
 }.dokan-layout .last\:border-b-0:last-child {
@@ -2743,15 +2763,21 @@ select {
     --tw-text-opacity: 1;
     color: rgb(75 85 99 / var(--tw-text-opacity, 1));
   }
+}.dokan-layout .\[\&\:\:-webkit-scrollbar-thumb\]\:rounded-full::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+}.dokan-layout .\[\&\:\:-webkit-scrollbar\]\:h-1::-webkit-scrollbar {
+  height: 0.25rem;
+}.dokan-layout .\[\&\:\:-webkit-scrollbar\]\:w-2::-webkit-scrollbar {
+  width: 0.5rem;
+}.dokan-layout :is(.\*\:\[\&\:not\(\:last-child\)\]\:\*\:border-b-2 > *:not(:last-child) > *) {
+  border-bottom-width: 2px;
+}.dokan-layout :is(.\[\&\:not\(\:last-child\)\]\:\*\:border-b > *:not(:last-child)) {
+  border-bottom-width: 1px;
+}.dokan-layout :is(.focus\:\*\:\[\&\:not\(\:last-child\)\]\:\*\:outline-transparent > *:not(:last-child) > *:focus) {
+  outline-color: transparent;
 }.dokan-layout :is(.\[\&_\*_p\]\:m-0 * p) {
   margin: 0px;
 }
-/**
-*  Converts a hex value into the rgb equivalent.
-*
-* @param {string} hex - the hexadecimal value to convert
-* @return {string} comma separated rgb values
-*/
 /**
  * Colors
  */
@@ -2759,20 +2785,14 @@ select {
  * Breakpoints & Media Queries
  */
 /**
+ * Colors
+ */
+/**
  * SCSS Variables.
  *
  * Please use variables from this sheet to ensure consistency across the UI.
  * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
  * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
- */
-/**
-*  Converts a hex value into the rgb equivalent.
-*
-* @param {string} hex - the hexadecimal value to convert
-* @return {string} comma separated rgb values
-*/
-/**
- * Colors
  */
 /**
  * Fonts & basic variables.
@@ -2808,6 +2828,139 @@ select {
 /**
  * React Native specific.
  * These variables do not appear to be used anywhere else.
+ */
+/**
+ * Colors
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Typography
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Radius scale.
+ */
+/**
+ * Elevation scale.
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Mobile specific styles
+ */
+/**
+ * Editor styles.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+*  Converts a hex value into the rgb equivalent.
+*
+* @param {string} hex - the hexadecimal value to convert
+* @return {string} comma separated rgb values
+*/
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Typography
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+/**
+ * Colors
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Typography
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Radius scale.
+ */
+/**
+ * Elevation scale.
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Mobile specific styles
+ */
+/**
+ * Editor styles.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+ * Breakpoints & Media Queries
  */
 /**
 *  Converts a hex value into the rgb equivalent.
@@ -2847,6 +3000,9 @@ select {
  * Reset the WP Admin page styles for Gutenberg-like pages.
  */
 :root {
+  --wp-block-synced-color: #7a00df;
+  --wp-block-synced-color--rgb: 122, 0, 223;
+  --wp-bound-block-color: var(--wp-block-synced-color);
   --wp-admin-theme-color: #007cba;
   --wp-admin-theme-color--rgb: 0, 124, 186;
   --wp-admin-theme-color-darker-10: #006ba1;
@@ -2854,11 +3010,8 @@ select {
   --wp-admin-theme-color-darker-20: #005a87;
   --wp-admin-theme-color-darker-20--rgb: 0, 90, 135;
   --wp-admin-border-width-focus: 2px;
-  --wp-block-synced-color: #7a00df;
-  --wp-block-synced-color--rgb: 122, 0, 223;
-  --wp-bound-block-color: var(--wp-block-synced-color);
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (min-resolution: 192dpi) {
   :root {
     --wp-admin-border-width-focus: 1.5px;
   }
@@ -3156,12 +3309,12 @@ select {
 .dataviews-filters__search-widget-filter-combobox__wrapper .dataviews-filters__search-widget-filter-combobox__input {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   padding: 6px 8px;
-  box-shadow: 0 0 0 transparent;
-  border-radius: 2px;
-  border: 1px solid #949494;
   /* Fonts smaller than 16px causes mobile safari to zoom. */
   /* Override core line-height. To be reviewed. */
   line-height: normal;
+  box-shadow: 0 0 0 transparent;
+  border-radius: 2px;
+  border: 1px solid #949494;
   display: block;
   padding: 0 8px 0 32px;
   background: #f0f0f0;

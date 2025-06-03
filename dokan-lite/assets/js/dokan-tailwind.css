@@ -193,6 +193,9 @@
 .right-3 {
     right: 0.75rem;
 }
+.right-6 {
+    right: 1.5rem;
+}
 .top-0 {
     top: 0px;
 }
@@ -201,6 +204,9 @@
 }
 .top-1 {
     top: 0.25rem;
+}
+.top-6 {
+    top: 1.5rem;
 }
 .top-\[calc\(100\%\+4px\)\] {
     top: calc(100% + 4px);
@@ -1053,6 +1059,9 @@
 .border-\[1px\] {
     border-width: 1px;
 }
+.\!border-b-2 {
+    border-bottom-width: 2px !important;
+}
 .\!border-b-\[1px\] {
     border-bottom-width: 1px !important;
 }
@@ -1691,6 +1700,10 @@
     --tw-text-opacity: 1;
     color: rgb(130 130 130 / var(--tw-text-opacity, 1));
 }
+.text-\[\#bcbed5\] {
+    --tw-text-opacity: 1;
+    color: rgb(188 190 213 / var(--tw-text-opacity, 1));
+}
 .text-amber-800 {
     --tw-text-opacity: 1;
     color: rgb(146 64 14 / var(--tw-text-opacity, 1));
@@ -2054,6 +2067,15 @@ table.wp-list-table.widefat.fixed {
 .before\:content-\[\'\'\]::before {
     --tw-content: '';
     content: var(--tw-content);
+}
+
+.\*\:first\:\*\:border-transparent > *:first-child > * {
+    border-color: transparent;
+}
+
+.\*\:first\:border-gray-200:first-child > * {
+    --tw-border-opacity: 1;
+    border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
 }
 
 .last\:mb-0:last-child {
@@ -2839,6 +2861,30 @@ table.wp-list-table.widefat.fixed {
         --tw-text-opacity: 1;
         color: rgb(75 85 99 / var(--tw-text-opacity, 1));
     }
+}
+
+.\[\&\:\:-webkit-scrollbar-thumb\]\:rounded-full::-webkit-scrollbar-thumb {
+    border-radius: 9999px;
+}
+
+.\[\&\:\:-webkit-scrollbar\]\:h-1::-webkit-scrollbar {
+    height: 0.25rem;
+}
+
+.\[\&\:\:-webkit-scrollbar\]\:w-2::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.\*\:\[\&\:not\(\:last-child\)\]\:\*\:border-b-2 > *:not(:last-child) > * {
+    border-bottom-width: 2px;
+}
+
+.\[\&\:not\(\:last-child\)\]\:\*\:border-b > *:not(:last-child) {
+    border-bottom-width: 1px;
+}
+
+.focus\:\*\:\[\&\:not\(\:last-child\)\]\:\*\:outline-transparent > *:not(:last-child) > *:focus {
+    outline-color: transparent;
 }
 
 .\[\&_\*_p\]\:m-0 * p {
