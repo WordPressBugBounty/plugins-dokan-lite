@@ -4887,6 +4887,11 @@ div.media-sidebar a.edit-attachment {
 .dokan-single-store .profile-frame .profile-info-box .profile-info-summery-wrapper .profile-info-summery .profile-info ul.store-social i.fa-flickr {
   color: #ff0084;
 }
+.dokan-single-store .profile-frame .profile-info-box .profile-info-summery-wrapper .profile-info-summery .profile-info ul.store-social i.fa-threads {
+  background: linear-gradient(-45deg, #833ab4, #fd1d1d, #fcb045);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .dokan-single-store .profile-frame .profile-info-box .profile-info-summery-wrapper .profile-info-summery .profile-info .seller-rating {
   display: none;
 }

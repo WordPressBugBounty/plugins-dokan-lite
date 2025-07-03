@@ -1,1 +1,1 @@
-<?php return array('dependencies' => array('wc-date'), 'version' => '5c0e104ec30d7b27946f');
+<?php return array('dependencies' => array('wc-date'), 'version' => '7766ab37959354c49c2b');

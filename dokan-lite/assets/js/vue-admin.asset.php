@@ -1,1 +1,1 @@
-<?php return array('dependencies' => array('jquery', 'moment'), 'version' => 'c4ad2eee3863865bbb0a');
+<?php return array('dependencies' => array('jquery', 'moment'), 'version' => '4f04f2529b8f37296d7b');

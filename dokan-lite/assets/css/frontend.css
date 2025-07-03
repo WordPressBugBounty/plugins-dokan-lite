@@ -4093,10 +4093,10 @@ div.dataviews-view-list {
   min-height: 32px;
   display: flex;
   align-items: center;
-  padding: 6px 0;
   line-height: 20px;
   -webkit-hyphens: auto;
           hyphens: auto;
+  align-self: center;
 }
 
 .dataforms-layouts-panel__field-control {
@@ -4149,10 +4149,10 @@ div.dataviews-view-list {
   min-height: 32px;
   display: flex;
   align-items: center;
-  padding: 6px 0;
   line-height: 20px;
   -webkit-hyphens: auto;
           hyphens: auto;
+  align-self: center;
 }
 
 .dataforms-layouts-regular__field-control {
