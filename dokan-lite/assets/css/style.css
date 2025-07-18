@@ -1809,6 +1809,9 @@ table.dokan-table .is-expanded .toggle-row::before {
   table.dokan-table thead {
     display: none;
   }
+  table.dokan-table thead.dokan-show-thead {
+    display: contents;
+  }
   table.dokan-table td.column-thumb,
   table.dokan-table td.column-primary ~ td:not(.check-column) {
     display: none;

@@ -759,6 +759,8 @@ video:where(.dokan-layout,.dokan-layout *) {
   height: 85px;
 }.dokan-layout .h-full{
   height: 100%;
+}.dokan-layout .h-screen{
+  height: 100vh;
 }.dokan-layout .max-h-\[280px\]{
   max-height: 280px;
 }.dokan-layout .max-h-\[500px\]{

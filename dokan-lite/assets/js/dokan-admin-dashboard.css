@@ -962,6 +962,8 @@ select {
   height: 85px;
 }.dokan-layout .h-full {
   height: 100%;
+}.dokan-layout .h-screen {
+  height: 100vh;
 }.dokan-layout .max-h-\[280px\] {
   max-height: 280px;
 }.dokan-layout .max-h-\[500px\] {
@@ -5069,10 +5071,14 @@ select {
   height: 1.75rem;
 }.dokan-layout .h-8 {
   height: 2rem;
+}.dokan-layout .h-\[21rem\] {
+  height: 21rem;
 }.dokan-layout .h-\[3rem\] {
   height: 3rem;
 }.dokan-layout .h-full {
   height: 100%;
+}.dokan-layout .h-screen {
+  height: 100vh;
 }.dokan-layout .max-h-\[500px\] {
   max-height: 500px;
 }.dokan-layout .min-h-\[194px\] {
@@ -5121,6 +5127,8 @@ select {
   width: 1.75rem;
 }.dokan-layout .w-8 {
   width: 2rem;
+}.dokan-layout .w-\[10\.5rem\] {
+  width: 10.5rem;
 }.dokan-layout .w-\[11rem\] {
   width: 11rem;
 }.dokan-layout .w-\[5px\] {
@@ -5133,6 +5141,8 @@ select {
   max-width: 48rem;
 }.dokan-layout .max-w-7xl {
   max-width: 80rem;
+}.dokan-layout .max-w-\[23rem\] {
+  max-width: 23rem;
 }.dokan-layout .max-w-\[530px\] {
   max-width: 530px;
 }.dokan-layout .max-w-\[720px\] {
@@ -5425,6 +5435,8 @@ select {
 }.dokan-layout .bg-yellow-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 252 232 / var(--tw-bg-opacity, 1));
+}.dokan-layout .bg-\[url\(\'\/assets\/images\/error-page-bg\.png\'\)\] {
+  background-image: url(../images/error-page-bg.png);
 }.dokan-layout .bg-close-icon {
   background-image: url(../images/close-icon.png);
 }.dokan-layout .bg-upgrade-popup-crown {
@@ -5585,6 +5597,8 @@ select {
   line-height: 1.25rem;
 }.dokan-layout .leading-6 {
   line-height: 1.5rem;
+}.dokan-layout .tracking-wide {
+  letter-spacing: 0.025em;
 }.dokan-layout .\!text-gray-800 {
   --tw-text-opacity: 1 !important;
   color: rgb(31 41 55 / var(--tw-text-opacity, 1)) !important;
@@ -5606,6 +5620,9 @@ select {
 }.dokan-layout .text-\[\#4C19E6\] {
   --tw-text-opacity: 1;
   color: rgb(76 25 230 / var(--tw-text-opacity, 1));
+}.dokan-layout .text-\[\#637381\] {
+  --tw-text-opacity: 1;
+  color: rgb(99 115 129 / var(--tw-text-opacity, 1));
 }.dokan-layout .text-\[\#7047EB\] {
   --tw-text-opacity: 1;
   color: rgb(112 71 235 / var(--tw-text-opacity, 1));
@@ -5627,6 +5644,8 @@ select {
 }.dokan-layout .text-blue-800 {
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity, 1));
+}.dokan-layout .text-dokan-link {
+  color: var(--dokan-link-color, #7047EB);
 }.dokan-layout .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity, 1));
