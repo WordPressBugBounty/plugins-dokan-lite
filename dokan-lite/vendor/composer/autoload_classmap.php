@@ -429,6 +429,7 @@ return array(
     'WeDevs\\Dokan\\Utilities\\AdminSettings' => $baseDir . '/includes/Utilities/AdminSettings.php',
     'WeDevs\\Dokan\\Utilities\\OrderUtil' => $baseDir . '/includes/Utilities/OrderUtil.php',
     'WeDevs\\Dokan\\Utilities\\ReportUtil' => $baseDir . '/includes/Utilities/ReportUtil.php',
+    'WeDevs\\Dokan\\Utilities\\VendorUtil' => $baseDir . '/includes/Utilities/VendorUtil.php',
     'WeDevs\\Dokan\\VendorNavMenuChecker' => $baseDir . '/includes/VendorNavMenuChecker.php',
     'WeDevs\\Dokan\\Vendor\\ChangeProductStatus' => $baseDir . '/includes/Vendor/ChangeProductStatus.php',
     'WeDevs\\Dokan\\Vendor\\Coupon' => $baseDir . '/includes/Vendor/Coupon.php',

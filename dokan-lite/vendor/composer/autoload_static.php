@@ -464,6 +464,7 @@ class ComposerStaticInit994060095c2a85909300b32408752f80
         'WeDevs\\Dokan\\Utilities\\AdminSettings' => __DIR__ . '/../..' . '/includes/Utilities/AdminSettings.php',
         'WeDevs\\Dokan\\Utilities\\OrderUtil' => __DIR__ . '/../..' . '/includes/Utilities/OrderUtil.php',
         'WeDevs\\Dokan\\Utilities\\ReportUtil' => __DIR__ . '/../..' . '/includes/Utilities/ReportUtil.php',
+        'WeDevs\\Dokan\\Utilities\\VendorUtil' => __DIR__ . '/../..' . '/includes/Utilities/VendorUtil.php',
         'WeDevs\\Dokan\\VendorNavMenuChecker' => __DIR__ . '/../..' . '/includes/VendorNavMenuChecker.php',
         'WeDevs\\Dokan\\Vendor\\ChangeProductStatus' => __DIR__ . '/../..' . '/includes/Vendor/ChangeProductStatus.php',
         'WeDevs\\Dokan\\Vendor\\Coupon' => __DIR__ . '/../..' . '/includes/Vendor/Coupon.php',

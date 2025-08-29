@@ -698,6 +698,8 @@ td[data-v-98ac2448],th[data-v-98ac2448]{padding:2px;background-color:#fff}td.tod
   width: 100%;
 }
 .dokan-upload-image img {
+  width: 100%;
+  display: flex;
   cursor: pointer;
 }
 

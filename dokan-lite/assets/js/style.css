@@ -5271,27 +5271,6 @@ div.media-sidebar a.edit-attachment {
   height: 100%;
   border-radius: 40px;
 }
-#dokan-seller-listing-wrap ul.dokan-seller-wrap li.no-banner-img .store-content .store-info .store-data-container {
-  height: 100%;
-  background: none;
-}
-#dokan-seller-listing-wrap ul.dokan-seller-wrap li.no-banner-img .store-content .store-info .featured-favourite .featured-label {
-  background: #d1dbf0;
-  color: #2d54a3;
-  box-shadow: none;
-}
-#dokan-seller-listing-wrap ul.dokan-seller-wrap li.no-banner-img .store-content .store-data h2 a {
-  color: #526b6f;
-  text-shadow: none;
-}
-#dokan-seller-listing-wrap ul.dokan-seller-wrap li.no-banner-img .store-content .store-data h2 a:hover {
-  color: #333;
-  text-shadow: none;
-}
-#dokan-seller-listing-wrap ul.dokan-seller-wrap li.no-banner-img .store-content .store-data p {
-  color: #748082;
-  text-shadow: none;
-}
 @media (min-width: 1200px) {
   .dokan-single-store .profile-frame .profile-info-box .profile-info-summery-wrapper .profile-info-summery {
     background-color: rgba(0, 0, 0, 0.65);

@@ -1918,6 +1918,15 @@ ul[data-v-38d3c45e] {
   border-bottom-right-radius: 5px;
 }
 
+.dokan-upload-image {
+  width: 100%;
+}
+.dokan-upload-image img {
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+}
+
 span.repeatable-item-description {
   color: #999;
   font-size: 11px;
@@ -2072,6 +2081,9 @@ ul.dokan-settings-repeatable-list li span.remove-item {
 }
 .field_contents fieldset .field_data .field_desc a:focus {
   box-shadow: 0 0 0 1px transparent;
+}
+.field_contents fieldset .field_data .field_default {
+  margin: 0;
 }
 .field_contents fieldset .social-switch-wraper {
   display: flex;
@@ -2970,13 +2982,6 @@ tr.data_clear_on_uninstall td fieldset label {
 }
 }
 
-.dokan-upload-image {
-  width: 100%;
-}
-.dokan-upload-image img {
-  cursor: pointer;
-}
-
 
 .dokan-form-input.dokan-store-category{
     width: 103% !important;
@@ -3394,6 +3399,7 @@ tr.data_clear_on_uninstall td fieldset label {
 .vendor-list td.store_name img {
   float: left;
   margin-right: 10px;
+  border-radius: 12px;
   margin-top: 1px;
   width: 24px;
   height: auto;
@@ -3493,13 +3499,10 @@ tr.data_clear_on_uninstall td fieldset label {
 .dokan-vendor-single .vendor-header .profile-banner {
   position: relative;
   width: calc(100% - 285px + 30px);
-  height: 350px;
   border: 1px solid #dfdfdf;
-  background: #496a94;
   overflow: hidden;
 }
 .dokan-vendor-single .vendor-header .profile-banner img {
-  height: 350px;
   width: 100%;
 }
 .dokan-vendor-single .vendor-header .profile-banner .action-links {
@@ -3545,7 +3548,6 @@ tr.data_clear_on_uninstall td fieldset label {
   position: absolute;
   left: 33%;
   top: 46px;
-  color: white;
   width: 80px;
   cursor: pointer;
 }
@@ -3566,7 +3568,7 @@ tr.data_clear_on_uninstall td fieldset label {
 .dokan-vendor-single .vendor-header .profile-icon.edit-mode img {
   border: 5px solid #1a9ed4;
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 0.3;
 }
 .dokan-vendor-single .vendor-header .profile-banner.edit-mode {
   cursor: pointer;
@@ -3589,7 +3591,6 @@ tr.data_clear_on_uninstall td fieldset label {
   top: 50%;
   font-size: 30px;
   font-weight: 400;
-  color: white;
 }
 .dokan-vendor-single .vendor-header .profile-banner.edit-mode .banner-wrap .edit-banner i.change-banner {
   font-size: 50px;

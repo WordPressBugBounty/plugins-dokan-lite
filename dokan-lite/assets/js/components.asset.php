@@ -1,1 +1,1 @@
-<?php return array('dependencies' => array('react', 'react-dom', 'react-jsx-runtime', 'wc-date', 'wp-components', 'wp-compose', 'wp-data', 'wp-date', 'wp-element', 'wp-hooks', 'wp-i18n'), 'version' => '02f76c7b498d2fb4cac6');
+<?php return array('dependencies' => array('dokan-hooks', 'dokan-utilities', 'lodash', 'react', 'react-dom', 'react-jsx-runtime', 'wc-date', 'wp-components', 'wp-compose', 'wp-data', 'wp-date', 'wp-element', 'wp-hooks', 'wp-i18n'), 'version' => '336279383d4b29e733fa');
