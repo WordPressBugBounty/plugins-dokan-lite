@@ -1314,8 +1314,7 @@ div.dataviews-view-list {
   display: flex;
   align-items: center;
   line-height: 20px;
-  -webkit-hyphens: auto;
-          hyphens: auto;
+  hyphens: auto;
   align-self: center;
 }
 
@@ -1370,8 +1369,7 @@ div.dataviews-view-list {
   display: flex;
   align-items: center;
   line-height: 20px;
-  -webkit-hyphens: auto;
-          hyphens: auto;
+  hyphens: auto;
   align-self: center;
 }
 

@@ -830,6 +830,8 @@ select {
   padding: 0px;
 }.dokan-layout .p-2\.5 {
   padding: 0.625rem;
+}.dokan-layout .p-4 {
+  padding: 1rem;
 }.dokan-layout .p-5 {
   padding: 1.25rem;
 }.dokan-layout .text-center {
@@ -2201,8 +2203,7 @@ div.dataviews-view-list {
   display: flex;
   align-items: center;
   line-height: 20px;
-  -webkit-hyphens: auto;
-          hyphens: auto;
+  hyphens: auto;
   align-self: center;
 }
 
@@ -2257,8 +2258,7 @@ div.dataviews-view-list {
   display: flex;
   align-items: center;
   line-height: 20px;
-  -webkit-hyphens: auto;
-          hyphens: auto;
+  hyphens: auto;
   align-self: center;
 }
 
