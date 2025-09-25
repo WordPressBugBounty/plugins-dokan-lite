@@ -530,8 +530,8 @@ video:where(.dokan-layout,.dokan-layout *) {
 }.dokan-layout textarea:focus,.dokan-layout input[type=text]:focus,.dokan-layout input[type=number]:focus{outline-offset:0}button[data-headlessui-state=checked]:hover,button[data-headlessui-state=checked]:focus{background-color:var(--dokan-button-background-color, #7047EB) !important}div[data-radix-popper-content-wrapper],div[data-headlessui-state=open][role=dialog]{z-index:999 !important}.dokan-layout .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
-}.dokan-layout .mr-\[20px\]{
-  margin-left: 20px;
+}.dokan-layout .mr-\[10px\]{
+  margin-left: 10px;
 }.dokan-layout .flex{
   display: flex;
 }.dokan-layout .h-16{
@@ -621,4 +621,7 @@ video:where(.dokan-layout,.dokan-layout *) {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }.dokan-layout .filter{
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}@media (min-width: 768px){.dokan-layout .md\:mr-\[20px\]{
+    margin-left: 20px;
+  }
 }

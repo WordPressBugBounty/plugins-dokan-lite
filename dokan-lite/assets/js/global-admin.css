@@ -4,6 +4,11 @@
   box-shadow: none;
   background: transparent;
 }
+.dokan-admin-notices-wrap.notice::before,
+.dokan-admin-notices-wrap.notice::after {
+  content: none !important;
+  display: none !important;
+}
 .dokan-admin-notices-wrap .dokan-admin-notices {
   position: relative;
   box-sizing: border-box;
@@ -74,7 +79,7 @@
   background: #fff;
   padding: 15px 20px;
   border-left-style: solid;
-  border-left-width: 5px;
+  border-left-width: 4px;
 }
 .dokan-admin-notices-wrap .dokan-admin-notice.dokan-success {
   border-left-color: #49B671;
@@ -265,5 +270,30 @@
 }
 #adminmenu #toplevel_page_dokan .wp-submenu a:empty {
   display: none;
+}
+.toplevel_page_dokan #wpcontent {
+  padding: 0;
+  overflow-x: hidden !important;
+  min-height: calc(100vh - 32px);
+}
+.toplevel_page_dokan #wpcontent .dokan-admin-page-body {
+  padding-left: 20px;
+}
+@media (max-width: 783px) {
+  .toplevel_page_dokan #wpbody-content {
+    padding-left: 0;
+  }
+  .toplevel_page_dokan #wpcontent .dokan-admin-page-body {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 782px) {
+  .toplevel_page_dokan #wpbody-content,
+  .toplevel_page_dokan #wpcontent {
+    min-height: calc(100vh - 46px);
+  }
+  .toplevel_page_dokan #wpcontent .dokan-admin-page-body {
+    padding-left: 10px;
+  }
 }
 

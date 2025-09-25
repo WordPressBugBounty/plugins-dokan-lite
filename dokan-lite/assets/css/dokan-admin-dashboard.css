@@ -720,7 +720,7 @@ select {
 }.dokan-layout  input[type=checkbox]::before {
   --tw-content: "" !important;
   content: var(--tw-content) !important;
-}.dokan-layout textarea:focus,.dokan-layout input[type=text]:focus,.dokan-layout input[type=number]:focus{outline-offset:0}button[data-headlessui-state=checked]:hover,button[data-headlessui-state=checked]:focus{background-color:var(--dokan-button-background-color, #7047EB) !important}div[data-radix-popper-content-wrapper],div[data-headlessui-state=open][role=dialog]{z-index:999 !important}.container {
+}.dokan-layout textarea:focus,.dokan-layout input[type=text]:focus,.dokan-layout input[type=number]:focus{outline-offset:0}button[data-headlessui-state=checked]:hover,button[data-headlessui-state=checked]:focus{background-color:var(--dokan-button-background-color, #7047EB) !important}div[data-radix-popper-content-wrapper],div[data-headlessui-state=open][role=dialog]{z-index:999 !important}.dokan-react-time-picker .components-base-control__field:has(.components-toggle-group-control){border:1px solid var(--dokan-button-border-color, #7047EB) !important;border-radius:2px}.dokan-react-time-picker .components-base-control__field:has(.components-toggle-group-control):focus-within{border-color:var(--dokan-button-background-color, #7047EB) !important}.dokan-react-time-picker .components-toggle-group-control{border:none}.dokan-react-time-picker .components-toggle-group-control .components-toggle-group-control-option-base[aria-checked=false]{color:var(--wp-components-color-foreground, #1e1e1e)}.dokan-react-time-picker .components-toggle-group-control::before{left:.75px;background-color:var(--dokan-button-background-color, #7047EB) !important}.dokan-react-time-picker .components-toggle-group-control:focus-within{border:none;box-shadow:none}.dokan-react-time-picker .components-datetime__time-field{border-radius:2px;border:1px solid var(--dokan-button-border-color, #7047EB) !important}.dokan-react-time-picker .components-datetime__time-field .components-datetime__time-separator,.dokan-react-time-picker .components-datetime__time-field .components-input-control__backdrop{border:none !important}.dokan-react-time-picker .components-datetime__time-field .components-input-control__input:focus~.components-input-control__backdrop{box-shadow:none !important}.dokan-react-time-picker .components-datetime__time-field:focus-within{border-color:var(--dokan-button-background-color, #7047EB) !important}.dokan-react-time-picker .delivery-field-error .components-base-control__field:has(.components-toggle-group-control){border-color:red !important}.dokan-react-time-picker .delivery-field-error .components-datetime__time-field{border-color:red !important}.container {
   width: 100%;
 }@media (min-width: 640px) {
 
@@ -886,8 +886,8 @@ select {
   margin-right: 1rem;
 }.dokan-layout .mr-5 {
   margin-right: 1.25rem;
-}.dokan-layout .mr-\[20px\] {
-  margin-right: 20px;
+}.dokan-layout .mr-\[10px\] {
+  margin-right: 10px;
 }.dokan-layout .mr-auto {
   margin-right: auto;
 }.dokan-layout .ms-10 {
@@ -2664,6 +2664,10 @@ select {
 
   .dokan-layout .md\:ml-4 {
     margin-left: 1rem;
+  }
+
+  .dokan-layout .md\:mr-\[20px\] {
+    margin-right: 20px;
   }
 
   .dokan-layout .md\:mt-0 {
