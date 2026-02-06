@@ -25,6 +25,19 @@ class ProductControllerV2 extends ProductController {
     protected $namespace = 'dokan/v2';
 
     /**
+     * Class Constructor.
+     *
+     * @since 4.1.3
+     *
+     * @return void
+     */
+    public function __construct() {
+        parent::__construct();
+
+        add_filter( 'dokan_rest_product_listing_exclude_type', [ $this, 'reset_exclude_product_type' ], 99, 2 );
+    }
+
+    /**
      * Register all routes related with stores
      *
      * @since 3.7.10
@@ -155,7 +168,7 @@ class ProductControllerV2 extends ProductController {
         );
 
         $params['product_type'] = array(
-            'description'       => __( 'Products type simple, variable, grouped product etc.', 'dokan-lite' ),
+            'description'       => __( 'Products type all, simple, variable, grouped product etc.', 'dokan-lite' ),
             'type'              => 'string',
             'sanitize_callback' => 'sanitize_text_field',
             'validate_callback' => 'rest_validate_request_arg',
@@ -195,6 +208,11 @@ class ProductControllerV2 extends ProductController {
             'default'           => array(),
             'sanitize_callback' => 'wp_parse_id_list',
         );
+        $params['include_variations'] = array(
+            'description' => __( 'If true matched product variations will be added to the collection', 'dokan-lite' ),
+            'type'        => 'boolean',
+            'default'     => false,
+        );
 
         return $params;
     }
@@ -231,13 +249,13 @@ class ProductControllerV2 extends ProductController {
      */
     protected function prepare_objects_query( $request ) {
         $args = parent::prepare_objects_query( $request );
+        unset( $args['author'] );
 
         $args = array_merge(
             $args,
             array(
                 'posts_per_page' => isset( $request['per_page'] ) ? $request['per_page'] : 10,
                 'paged'          => isset( $request['page'] ) ? $request['page'] : 1,
-                'author'         => dokan_get_current_user_id(),
                 'orderby'        => isset( $request['orderby'] ) ? $request['orderby'] : 'date',
                 'post_type'      => 'product',
                 'date_query'     => [],
@@ -245,7 +263,7 @@ class ProductControllerV2 extends ProductController {
                     array(
                         'taxonomy' => 'product_type',
                         'field'    => 'slug',
-                        'terms'    => apply_filters( 'dokan_product_listing_exclude_type', array() ),
+                        'terms'    => apply_filters( 'dokan_rest_product_listing_exclude_type', array(), $request ),
                         'operator' => 'NOT IN',
                     ),
                 ),
@@ -256,8 +274,10 @@ class ProductControllerV2 extends ProductController {
         $product_types  = apply_filters( 'dokan_product_types', [ 'simple' => __( 'Simple', 'dokan-lite' ) ] );
 
         // If any vendor it trying to access other products then we need to replace author id by current user id.
-        if ( $request->get_param( 'author' ) && ! current_user_can( dokana_admin_menu_capability() ) ) {
+        if ( ! current_user_can( dokana_admin_menu_capability() ) ) {
             $args['author'] = dokan_get_current_user_id();
+        } elseif ( $request->get_param( 'author' ) ) {
+            $args['author'] = $request->get_param( 'author' );
         }
 
         // Pagination page number.
@@ -302,6 +322,20 @@ class ProductControllerV2 extends ProductController {
             );
         }
 
+        // Include variations but exclude parent variable products when requested.
+        if ( isset( $request['include_variations'] ) && true === wc_string_to_bool( $request['include_variations'] ) ) {
+            $args['post_type'] = [ $this->post_type, 'product_variation' ];
+
+            // Exclude parent variable products so only variations (and other non-variable products) are included.
+            // Variations are a different post type and won't be affected by this taxonomy filter.
+            $args['tax_query'][] = array(
+                'taxonomy' => 'product_type',
+                'field'    => 'slug',
+                'terms'    => array( 'variable' ),
+                'operator' => 'NOT IN',
+            );
+        }
+
         return apply_filters( 'dokan_rest_pre_product_listing_args', $args, $request );
     }
 
@@ -342,5 +376,26 @@ class ProductControllerV2 extends ProductController {
                 ),
             ),
         );
+    }
+
+    /**
+     * Reset exclude product type.
+     *
+     * @since 4.1.3
+     *
+     * @param array           $exclude_product_type Exclude product type.
+     * @param WP_REST_Request $request              Request object.
+     *
+     * @return array
+     */
+    public function reset_exclude_product_type( $exclude_product_type, $request ) {
+        $exclude_product_type = apply_filters( 'dokan_product_listing_exclude_type', $exclude_product_type );
+        $product_type         = $request->get_param( 'product_type' );
+
+        if ( 'all' === $product_type ) {
+            $exclude_product_type = [];
+        }
+
+        return $exclude_product_type;
     }
 }

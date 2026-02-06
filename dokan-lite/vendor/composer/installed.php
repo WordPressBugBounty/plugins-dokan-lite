@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'wedevs/dokan',
-        'pretty_version' => 'v4.1.0',
-        'version' => '4.1.0.0',
-        'reference' => '1f8dcdfcbf47a70e479e4a1847fabcd3b163ff82',
+        'pretty_version' => 'v4.2.9',
+        'version' => '4.2.9.0',
+        'reference' => '0d85f56d304f0e77ee09c947db599b3c771e7853',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'appsero/client' => array(
-            'pretty_version' => 'v2.0.4',
-            'version' => '2.0.4.0',
-            'reference' => '12ff65b9770286d21edf314e7acfcd26fdde3315',
+            'pretty_version' => 'v2.0.5',
+            'version' => '2.0.5.0',
+            'reference' => 'b7766ee150cc8e28125a818a11e770feb9899a71',
             'type' => 'library',
             'install_path' => __DIR__ . '/../appsero/client',
             'aliases' => array(),
@@ -38,9 +38,9 @@
             'dev_requirement' => false,
         ),
         'wedevs/dokan' => array(
-            'pretty_version' => 'v4.1.0',
-            'version' => '4.1.0.0',
-            'reference' => '1f8dcdfcbf47a70e479e4a1847fabcd3b163ff82',
+            'pretty_version' => 'v4.2.9',
+            'version' => '4.2.9.0',
+            'reference' => '0d85f56d304f0e77ee09c947db599b3c771e7853',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

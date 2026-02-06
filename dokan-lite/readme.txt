@@ -2,12 +2,12 @@
 Contributors: tareq1988, dokaninc, wedevs, nizamuddinbabu
 Donate Link: https://dokan.co/wordpress/pricing/
 Tags: WooCommerce multivendor marketplace, multi seller, multi vendor, multivendor, multivendor marketplace
-Requires at least: 6.6
-Tested up to: 6.8.2
+Requires at least: 6.7
+Tested up to: 6.9
 WC requires at least: 8.5.0
-WC tested up to: 10.2.1
+WC tested up to: 10.4.3
 Requires PHP: 7.4
-Stable tag: 4.1.0
+Stable tag: 4.2.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,7 +39,7 @@ Hear what reputed WordPress influencer and online business strategist, Darrel Wi
 
 Here is how you can build your multivendor marketplace with Dokan.
 
-[youtube https://www.youtube.com/watch?v=_Vv5T7qqhoE]
+[https://youtu.be/_Vv5T7qqhoE?si=RPXD4hksHedNR87W&t=1]
 
 = PLACES WHERE DOKAN HAS BEEN FEATURED =
 
@@ -69,7 +69,7 @@ Here is how you can build your multivendor marketplace with Dokan.
 
 👏 “Best investment we made last year.”
 
-👏 “[Excellent product. Ease of use. Saved hundreds of work hours with lots of additional benefits] (https://www.capterra.com/p/168004/Dokan-Multivendor-Marketplace/reviews/543139/)”
+👏 “[Excellent product. Ease of use. Saved hundreds of work hours with lots of additional benefits](https://www.capterra.com/p/168004/Dokan-Multivendor-Marketplace/reviews/543139/).”
 
 = SUCCESS STORIES WE ARE PROUD TO BE A PART OF =
 
@@ -94,7 +94,8 @@ Dokan is also compatible with the [Otel theme](https://dokan.co/wordpress/otel-t
 With Dokan, experience a smooth, fast setup process in under an hour and have your WooCommerce multivendor marketplace running within a day. It perfectly matches your expectations and is designed with intuitive practices from eCommerce leaders like WooCommerce and others.
 
 = AI Assistant =
-Generate product titles, short & long descriptions using generative AI directly from the vendor dashboard.
+* Generative AI: Generate product titles, short & long descriptions using generative AI directly from the vendor dashboard.
+* AI Image Enhancer: Instantly make product photos clearer, brighter, and more appealing.
 
 = A RELIABLE GROWING PLATFORM & COMMUNITY =
 
@@ -104,11 +105,12 @@ See Our Official GitHub page: [Official Dokan GitHub](https://github.com/getdoka
 
 = A SCALABLE MARKET =
 
-Dokan Multivendor Marketplace plugin allows you to have an unlimited number of vendors on any marketplace, each with the ability to create an unlimited number of products. Create marketplaces that offer –
-* Physical products
+Dokan Multivendor Marketplace plugin allows you to have an unlimited number of vendors on any marketplace, each with the ability to create an unlimited number of products. Create marketplaces that offer – 
+
+* Physical products 
 * Downloadable products
 * Variable products
-* Bookable products through the [Dokan WC Bookings Integration](https://dokan.co/wordpress/modules/woocommerce-booking-integration/?utm_campaign=dokan-wordpress-org-visitor&utm_medium=learn_more_about_dokan&utm_source=WordPress.org)
+* Bookable products through the [Dokan WC Bookings Integration](https://dokan.co/wordpress/modules/woocommerce-booking-integration/?utm_campaign=dokan-wordpress-org-visitor&utm_medium=learn_more_about_dokan&utm_source=WordPress.org) 
 * Auction products through the [Dokan Simple Auction Integration](https://dokan.co/wordpress/modules/dokan-simple-auctions/?utm_campaign=dokan-wordpress-org-visitor&utm_medium=learn_more_about_dokan&utm_source=WordPress.org)
 
 = EARN IN MULTIPLE WAYS =
@@ -233,6 +235,8 @@ Never get bored with the old-fashioned appearance of your store. Have full contr
 Dokan comes with a number of advanced features & modules that boost your WooCommerce marketplace position, always keeping you one step ahead of the competition. Continuous innovations and features are brought with regular and timely releases. Check out the changelog [here](https://dokan.co/wordpress/changelog/?utm_campaign=dokan-wordpress-org-visitor&utm_medium=learn_more_about_dokan&utm_source=WordPress.org)
 
 * [Stripe Express](https://dokan.co/wordpress/modules/stripe-express/?utm_medium=dokan-lite&utm_source=wordpress.org&utm_campaign=module)(Pro)
+* [Paystack](https://dokan.co/docs/wordpress/modules/paystack/)(Pro)
+* [Vendor Support](https://dokan.co/docs/wordpress/modules/vendor-support/)(Pro)
 * [Print on Demand Marketplace](https://dokan.co/wordpress/modules/printful-integration/?utm_medium=dokan-lite&utm_source=wordpress.org&utm_campaign=module)(Pro)
 * [Minimum Maximum Order](https://dokan.co/wordpress/modules/minimum-maximum-order/?utm_medium=dokan-lite&utm_source=wordpress.org&utm_campaign=modules) (Pro)
 * [Product Advertising](https://dokan.co/wordpress/modules/product-advertising/?utm_medium=dokan-lite&utm_source=wordpress.org&utm_campaign=modules) (Pro)
@@ -349,26 +353,33 @@ A. Just install and activate the PRO version without deleting the free plugin. A
 
 == Changelog ==
 
-= v4.1.0 ( Sep 30, 2025 ) =
-- **feat:** New React-based Admin Dashboard with enhanced metrics and rank boards.
-- **update:** Migrated Pro Features page from Vue to React with enhanced UI.
+= v4.2.9 ( Jan 27, 2026 ) =
+- **update:** Replace DokanModal dependency from dokan-ui with WordPress Modal.
+- **update:** Add user feedback link across Dokan admin pages.
+- **update:** Introduce a customizable option to exclude vendor order balance.
+- **update:** Add AI text and image enhancer settings to vendor preferences.
+- **fix:** Improve default table interactions in Dokan admin.
+- **fix:** Handle vendor payment settings permission properly for Vendor staff.
 
-= v4.0.9 ( Sep 25, 2025 ) =
-- **update**: Dokan Plugin Top Bar & Notice Left Bar UI.
-- **update**: Order fee now distribute based on order creation if the order is manual order then the added fee of that order will go to seller otherwise it will go to admin. The fee tax will be distributed based on product tax receipt.
-- **fix:** Fix Dashboard and Report page header title and apply filters.
-- **fix:** Conflict with ACF plugin: prevented empty admin notices when Dokan is active.
+= v4.2.8 ( Jan 20, 2026 ) =
+- **update:** Restore vendor revenue widget for vendor dashboard.
+- **update:** Improve query arguments on admin withdraw pages to support filtering options.
+- **fix:** Preserve order filters when paginating vendor dashboard orders.
+- **fix:** Prevent Dokan menu from appearing for users without permission.
+- **fix:** Resolve PHP deprecated warnings in the withdraw controller.
 
-= v4.0.8 ( Sep 12, 2025 ) =
-- **new:** Added "Chat with us" admin submenu for providing direct access to support chat functionality.
-- **enhance:** Modernize vendor selection with searchable dropdown for better performance.
-- **fix:** Prevent potential errors on additional product sections.
+= v4.2.7 ( Jan 14, 2026 ) =
+- **fix:** Allow Dokan stock restoration on WC Block Checkout.
 
-= v4.0.7 ( Sep 01, 2025 ) =
-- **fix:** Enhanced security controls for vendor account credentials management.
+= v4.2.6 ( Jan 13, 2026 ) =
+- **update:** Add brand fields in Vendor Product Creation Popup.
+- **update:** Add address fields on customer account migration form.
+- **update:** Add product tags creation separator (,) for vendor dashboard.
+- **fix:** Vendor list page redirection after creating a new vendor.
 
-= v4.0.6 ( Aug 29, 2025 ) =
-- **update:** Added translation support for dashboard analytics report scripts to improve internationalization (i18n).
-- **fix:** Resolved an issue in the AdminNotice Vue component by applying the Mixin utility for improved functionality.
-- **fix:** Added async search in store category in vendor edit.
-- **fix:** Admin not receiving withdrawal request email notifications.
+= v4.2.5 ( Jan 05, 2026 ) =
+- **fix:** Add translation support to store performance report labels.
+- **fix:** Social profile URL's not accessible for staff users.
+- **fix:** Prevented unauthorized changes to administrator accounts.
+
+[See changelog for all versions](https://github.com/getdokan/dokan/blob/develop/CHANGELOG.md).

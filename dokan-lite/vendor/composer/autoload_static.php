@@ -13,27 +13,27 @@ class ComposerStaticInit6be158b6a5cc2161316d5e1659af025b
     );
 
     public static $prefixLengthsPsr4 = array (
-        'W' => 
+        'W' =>
         array (
             'WeDevs\\Dokan\\ThirdParty\\Packages\\' => 33,
             'WeDevs\\Dokan\\' => 13,
         ),
-        'A' => 
+        'A' =>
         array (
             'Appsero\\' => 8,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'WeDevs\\Dokan\\ThirdParty\\Packages\\' => 
+        'WeDevs\\Dokan\\ThirdParty\\Packages\\' =>
         array (
             0 => __DIR__ . '/../..' . '/lib/packages',
         ),
-        'WeDevs\\Dokan\\' => 
+        'WeDevs\\Dokan\\' =>
         array (
             0 => __DIR__ . '/../..' . '/includes',
         ),
-        'Appsero\\' => 
+        'Appsero\\' =>
         array (
             0 => __DIR__ . '/..' . '/appsero/updater/src',
             1 => __DIR__ . '/..' . '/appsero/client/src',

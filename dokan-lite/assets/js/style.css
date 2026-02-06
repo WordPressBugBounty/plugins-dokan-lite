@@ -2321,6 +2321,25 @@ article.dokan-notice-single-notice-area span.dokan-single-announcement-date {
   color: #fff;
   animation: showNav 350ms ease-in-out both;
 }
+.dokan-dashboard #dokan-dashboard-fullwidth-wrapper .dokan-dash-sidebar {
+  transition: width 0.2s ease;
+  width: var(--dokan-sidebar-width, 250px);
+  max-width: var(--dokan-sidebar-width, 250px);
+}
+.dokan-dashboard #dokan-dashboard-fullwidth-wrapper .dokan-dashboard-wrap {
+  z-index: 1;
+  position: relative;
+}
+.dokan-dashboard #dokan-dashboard-fullwidth-wrapper .dokan-dashboard-wrap .dokan-dashboard-content {
+  position: relative;
+  padding: 48px;
+}
+.dokan-dashboard #dokan-dashboard-fullwidth-wrapper .dokan-dashboard-wrap .dokan-dash-sidebar {
+  visibility: hidden;
+}
+.dokan-dashboard #dokan-dashboard-fullwidth-wrapper .dokan-dashboard-wrap .dokan-dashboard-content {
+  display: none;
+}
 @keyframes showNav {
   from {
     opacity: 0;
@@ -2344,6 +2363,22 @@ article.dokan-notice-single-notice-area span.dokan-single-announcement-date {
     display: none;
     height: auto !important;
     padding-top: 48px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .dokan-dashboard #dokan-dashboard-fullwidth-wrapper {
+    position: relative;
+  }
+  .dokan-dashboard #dokan-dashboard-fullwidth-wrapper .dokan-dash-sidebar {
+    display: none;
+  }
+  .dokan-dashboard #dokan-dashboard-fullwidth-wrapper .dokan-dashboard-wrap .dokan-dashboard-content {
+    padding: 24px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #dokan-dashboard-fullwidth-wrapper #dokan-vendor-dashboard-layout-root {
+    z-index: 99999;
   }
 }
 html,
@@ -2756,6 +2791,12 @@ div.media-sidebar a.edit-attachment {
   padding-left: 5px;
   padding-right: 5px;
 }
+.dokan-dashboard #dokan-dashboard-fullwidth-wrapper .dokan-dashboard-content {
+  width: calc(100% - var(--dokan-sidebar-width, 250px));
+}
+.dokan-dashboard .select2-search__field {
+  min-width: 220px !important;
+}
 .dokan-column-name-with-avatar {
   position: relative;
   padding-left: 46px !important;
@@ -2767,6 +2808,32 @@ div.media-sidebar a.edit-attachment {
   border-radius: 50%;
   border: 1px solid #fff;
   box-shadow: 0 1px 0 0 #e0e0e0;
+}
+@media screen and (max-width: 768px) {
+  #dokan-dashboard-fullwidth-wrapper .dokan-dashboard-content {
+    width: 100%;
+  }
+  #dokan-dashboard-fullwidth-wrapper .dokan-frontend-layout header {
+    padding: 0 22px;
+    min-height: 60px;
+    height: 60px;
+  }
+  #dokan-dashboard-fullwidth-wrapper .dokan-frontend-layout .visit-store,
+  #dokan-dashboard-fullwidth-wrapper .dokan-frontend-layout .header-avatar {
+    padding: 0;
+  }
+  #dokan-dashboard-fullwidth-wrapper .dokan-frontend-layout .header-avatar {
+    padding-left: 20px;
+  }
+  #dokan-dashboard-fullwidth-wrapper .dokan-frontend-layout .visit-store {
+    font-size: 12px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #dokan-dashboard-fullwidth-wrapper #dokan-vendor-dashboard-layout-root {
+    top: 0;
+  }
 }
 .dokan-orders-content .dokan-orders-area .dokan-order-left-content {
   margin-right: 3%;
@@ -2848,10 +2915,8 @@ div.media-sidebar a.edit-attachment {
 .dokan-orders-content .dokan-orders-area td.dokan-order-action {
   gap: 5px;
   width: 100%;
-  display: grid;
-  grid-gap: 5px;
-  flex-direction: column;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
 }
 .dokan-orders-content .dokan-orders-area td.dokan-order-action .wpo_wcpdf {
   border: 1px solid transparent;
@@ -4894,6 +4959,10 @@ div.media-sidebar a.edit-attachment {
   background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.dokan-single-store .profile-frame .profile-info-box .profile-info-summery-wrapper .profile-info-summery .profile-info ul.store-social i.fa-tiktok {
+  color: #010101;
+  text-shadow: 2px 2px 0 #EE1D52, -2px -2px 0 #69C9D0;
 }
 .dokan-single-store .profile-frame .profile-info-box .profile-info-summery-wrapper .profile-info-summery .profile-info .seller-rating {
   display: none;

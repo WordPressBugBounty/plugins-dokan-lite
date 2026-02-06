@@ -178,40 +178,31 @@ class Settings {
     }
 
     /**
-     * Load Payment Content
+     * Get sellers connected and not connected payment methods.
      *
-     * @since 2.4
+     * @param $seller_id
      *
-     * @param string $slug_suffix
+     * @param $active_payment_methods
      *
-     * @return void
+     * @return array
      */
-    public function load_payment_content( $slug_suffix ) {
-        $payment_methods = dokan_withdraw_get_active_methods();
+    public function get_seller_payment_methods( $seller_id = '', $active_payment_methods = [] ): array {
+        if ( empty( $active_payment_methods ) ) {
+            $active_payment_methods = dokan_withdraw_get_active_methods();
+        }
 
         // methods which are inactive in Dokan > Settings > Withdraw Options has a empty value so filter them out
-        $payment_methods = array_filter(
-            $payment_methods, function ( $value ) {
+        $active_payment_methods = array_filter(
+            $active_payment_methods, function ( $value ) {
 				return ! empty( $value );
 			}
         );
 
-        //no payment method is active, show informative message
-        if ( empty( $payment_methods ) ) {
-            dokan_get_template_part(
-                'global/dokan-error',
-                '',
-                [
-                    'deleted' => false,
-                    'message' => __( 'No withdraw method is available. Please contact site admin.', 'dokan-lite' ),
-                ]
-            );
+        $payment_method_ids = array_keys( $active_payment_methods );
 
-            return;
+        if ( empty( $seller_id ) ) {
+            $seller_id = dokan_get_current_user_id();
         }
-
-        $payment_method_ids = array_keys( $payment_methods );
-        $seller_id          = dokan_get_current_user_id();
 
         $seller_connected_payment_method_ids = array_filter(
             $payment_method_ids,
@@ -223,6 +214,75 @@ class Settings {
         $seller_disconnected_payment_method_ids = array_diff( $payment_method_ids, $seller_connected_payment_method_ids );
         $seller_disconnected_payment_methods    = $this->get_payment_methods( $seller_disconnected_payment_method_ids );
         $seller_connected_payment_methods       = $this->get_payment_methods( $seller_connected_payment_method_ids );
+
+        return [
+            'connected_methods'    => $seller_connected_payment_methods,
+            'disconnected_methods' => $seller_disconnected_payment_methods,
+            'active_methods'       => $active_payment_methods,
+        ];
+    }
+
+    /**
+     * Validate payment access and check active methods
+     *
+     * @since 4.2.9
+     *
+     * @param array $active_methods
+     *
+     * @return bool Returns true if validation passes, false otherwise
+     */
+    protected function validate_payment_access( $active_methods ) {
+        // Check staff permissions
+        if ( ! current_user_can( 'dokan_view_store_payment_menu' ) ) {
+            dokan_get_template_part(
+                'global/dokan-error',
+                '',
+                [
+                    'deleted' => false,
+                    'message' => esc_html__( 'You have no permission to view this page', 'dokan-lite' ),
+                ]
+            );
+
+            return false;
+        }
+
+        // Check if payment methods are available
+        if ( empty( $active_methods ) ) {
+            dokan_get_template_part(
+                'global/dokan-error',
+                '',
+                [
+                    'deleted' => false,
+                    'message' => esc_html__( 'No withdraw method is available. Please contact site admin.', 'dokan-lite' ),
+                ]
+            );
+
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * Load Payment Content
+     *
+     * @since 2.4
+     *
+     * @param string $slug_suffix
+     *
+     * @return void
+     */
+    public function load_payment_content( $slug_suffix ) {
+        $seller_id            = dokan_get_current_user_id();
+        $data                 = $this->get_seller_payment_methods( $seller_id );
+        $connected_methods    = $data['connected_methods'];
+        $disconnected_methods = $data['disconnected_methods'];
+        $active_methods       = $data['active_methods'];
+
+        // Check permissions and validate payment methods
+        if ( ! $this->validate_payment_access( $active_methods ) ) {
+            return;
+        }
 
         /*
          * If we are requesting a single payment method page (to edit or for first time setup)
@@ -256,8 +316,8 @@ class Settings {
             $args = array_merge(
                 $args,
                 [
-                    'methods'        => $seller_connected_payment_methods,
-                    'unused_methods' => $seller_disconnected_payment_methods,
+                    'methods'        => $connected_methods,
+                    'unused_methods' => $disconnected_methods,
                 ]
             );
 
@@ -277,7 +337,7 @@ class Settings {
             ]
         );
 
-        if ( ! in_array( $method_key, $payment_method_ids, true ) || empty( $method ) || ! isset( $method['callback'] ) || ! is_callable( $method['callback'] ) ) {
+        if ( ! in_array( $method_key, array_keys( $active_methods ), true ) || empty( $method ) || ! isset( $method['callback'] ) || ! is_callable( $method['callback'] ) ) {
             dokan_get_template_part(
                 'global/dokan-error',
                 '',
@@ -799,7 +859,8 @@ class Settings {
      * @return array
      */
     private function get_payment_methods( $method_keys ) {
-        $methods = [];
+        $methods  = [];
+        $gateways = WC()->payment_gateways->payment_gateways();
 
         foreach ( $method_keys as $method_key ) {
             $cur_method = dokan_withdraw_get_method( $method_key );
@@ -812,11 +873,20 @@ class Settings {
                     $cur_method['title'] = $method_title;
                 }
 
+                $cur_method['description'] = '';
+                if ( isset( $gateways[ $method_key ] ) ) {
+                    $cur_method['description'] = $gateways[ $method_key ]->get_description();
+                } elseif ( $method_key === 'bank' ) {
+                    $cur_method['description'] = $gateways['bacs']->get_description();
+                } elseif ( $method_key === 'paypal' ) {
+                    $cur_method['description'] = $gateways['bacs']->get_description();
+                }
+
                 $methods[ $method_key ] = $cur_method;
             }
         }
 
-        return $methods;
+        return apply_filters( 'dokan_vendor_payment_withdraw_methods', $methods, $gateways );
     }
 
     /**
