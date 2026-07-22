@@ -74,7 +74,14 @@ class Updater
      */
     public function run_plugin_hooks()
     {
-        add_action('admin_init', [$this, 'admin_init']);
+        // Register on every request, not only in wp-admin. WordPress rebuilds the
+        // update_plugins transient from the wp_update_plugins cron event, which drives
+        // auto-updates and never fires admin_init; registering these inside admin_init
+        // left the plugin out of that transient and blanked its Automatic Updates column.
+        add_filter( 'pre_set_site_transient_update_plugins', [ $this, 'check_plugin_update' ] );
+        add_filter( 'plugins_api', [ $this, 'plugins_api_filter' ], 10, 3 );
+
+        add_action( 'admin_init', [ $this, 'admin_init' ] );
     }
 
     /**
@@ -88,13 +95,11 @@ class Updater
     }
 
     /**
-     * Initialize the admin hooks
+     * Initialize the admin-only hooks
      *
      * @return void
      */
     public function admin_init() {
-        add_filter( 'pre_set_site_transient_update_plugins', [ $this, 'check_plugin_update' ] );
-        add_filter( 'plugins_api', [ $this, 'plugins_api_filter' ], 10, 3 );
         $this->show_warning_notice();
     }
 
@@ -123,6 +128,16 @@ class Updater
             $key = version_compare( $this->client->project_version, $version_info->new_version, '<' )
                 ? 'response'
                 : 'no_update';
+
+            if ( 'response' === $key && empty( $version_info->package ) ) {
+                // AppSero omits the package when the license is not active. Without a package
+                // WP_Automatic_Updater retries the update on every cron run and emails the admin
+                // each time it fails, so opt the entry out of unattended updates. Core still
+                // renders the update row and its "automatic update is unavailable" notice, which
+                // is the correct prompt to renew the license. Only meaningful on a response entry:
+                // WP_Automatic_Updater::should_update() never sees no_update.
+                $version_info->disable_autoupdate = true;
+            }
 
             $transient_data->{$key}[ $this->client->basename ] = $version_info;
             $transient_data->last_checked = time();
@@ -248,7 +263,20 @@ class Updater
             return $data;
         }
 
-        return $this->get_version_info();
+        $version_info = $this->get_version_info();
+
+        if (false === $version_info || !is_object($version_info)) {
+            return $data;
+        }
+
+        // WP core (install_plugin_install_status) reads $api->version; AppSero returns
+        // new_version, so mirror it to avoid "Undefined property: version" and the
+        // version_compare(null) deprecation on PHP 8.
+        if (!isset($version_info->version) && isset($version_info->new_version)) {
+            $version_info->version = $version_info->new_version;
+        }
+
+        return $version_info;
     }
 
     /**
