@@ -2386,6 +2386,10 @@ tr.data_clear_on_uninstall td fieldset label {
   display: table;
   content: " ";
 }
+.dokan-vendor-edit .tab-contents .content-body .dokan-form-group > .form-group {
+  display: flex;
+  flex-wrap: wrap;
+}
 .dokan-vendor-edit .tab-contents .content-body .dokan-form-group .column {
   float: right;
   width: 50%;
@@ -2411,17 +2415,54 @@ tr.data_clear_on_uninstall td fieldset label {
 .dokan-vendor-edit .tab-contents .content-body .dokan-form-group .column .store-avaibility-info .not-available {
   color: red;
 }
+.dokan-vendor-edit .tab-contents .content-body .dokan-form-group .column .password-field {
+  position: relative;
+}
+.dokan-vendor-edit .tab-contents .content-body .dokan-form-group .column .password-field .dokan-form-input {
+  padding-left: 36px;
+}
+.dokan-vendor-edit .tab-contents .content-body .dokan-form-group .column .password-field .password-toggle {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  height: 40px;
+  width: 36px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  color: #82878c;
+}
+.dokan-vendor-edit .tab-contents .content-body .dokan-form-group .column .password-field .password-toggle:hover,
+.dokan-vendor-edit .tab-contents .content-body .dokan-form-group .column .password-field .password-toggle:focus {
+  color: #23282d;
+}
+.dokan-vendor-edit .tab-contents .content-body .dokan-form-group .column .password-field .password-toggle .dashicons {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  vertical-align: middle;
+}
 .dokan-vendor-edit .tab-contents .content-body .dokan-form-group .column .password-generator {
   margin-top: 6px;
+  margin-bottom: 16px;
 }
 .dokan-vendor-edit .tab-contents .content-body .dokan-form-group .column .password-generator .regen-button {
   margin-left: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
-.dokan-vendor-edit .tab-contents .content-body .dokan-form-group .column .password-generator .regen-button span {
-  line-height: 26px;
+.dokan-vendor-edit .tab-contents .content-body .dokan-form-group .column .password-generator .regen-button .dashicons {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 20px;
 }
 .dokan-vendor-edit .tab-contents .content-body .dokan-form-group .column .checkbox-left.notify-vendor {
   margin-top: 6px;
+  margin-bottom: 16px;
 }
 .dokan-vendor-edit .tab-contents .content-body .dokan-form-group .column .multiselect {
   margin-top: 5px;
