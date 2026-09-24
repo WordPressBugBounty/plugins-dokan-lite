@@ -1,1 +1,1 @@
-<?php return array('dependencies' => array('wc-csv', 'wc-date', 'wp-i18n'), 'version' => '59071d2a67f4bf914639');
+<?php return array('dependencies' => array('wc-csv', 'wc-date', 'wp-i18n'), 'version' => 'fd9057cb48f5a5203fa8');
