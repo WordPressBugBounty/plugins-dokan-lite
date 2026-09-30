@@ -1254,18 +1254,18 @@ ul.dokan-settings-repeatable-list li span.remove-item {
   font-weight: 300;
   line-height: 21px;
   font-family: Roboto, sans-serif;
-  color: #6B7280;
+  color: #6b7280;
 }
 .dokan-settings-sub-section .sub-section-description .learn-more-btn {
   cursor: pointer;
   text-decoration: none;
 }
 .field_contents.data_clear {
-  background-color: #FFFBF3;
+  background-color: #fffbf3;
 }
 .field_contents.data_clear .field_desc,
 .field_contents.data_clear .fa-exclamation-triangle {
-  color: #E67E22 !important;
+  color: #e67e22 !important;
 }
 .field_contents {
   border: 1px solid #f3f4f6;
@@ -1296,7 +1296,7 @@ ul.dokan-settings-repeatable-list li span.remove-item {
   font-size: 14px;
 }
 .field_contents fieldset .field_data .field_desc {
-  color: #6B7280;
+  color: #6b7280;
   margin: 0;
   margin-top: 5px;
   font-size: 13px;
@@ -1402,7 +1402,7 @@ ul.dokan-settings-repeatable-list li span.remove-item {
   border: 0;
   padding: 0;
   position: relative;
-  background: #2196F3;
+  background: #2196f3;
   min-height: 25px;
   margin-right: 8px;
   border-radius: 50%;
@@ -1465,7 +1465,7 @@ ul.dokan-settings-repeatable-list li span.remove-item {
 .field_contents .field input[type='text'],
 .field_contents .field input[type='number'],
 .field_contents .field input[type='button'] {
-  border: 0.957434px solid #E9E9E9;
+  border: 0.957434px solid #e9e9e9;
   min-height: 32px;
   box-shadow: 0px 3.82974px 3.82974px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -1510,7 +1510,7 @@ ul.dokan-settings-repeatable-list li span.remove-item {
 }
 .field_contents .scl_fields {
   margin: 15px 0px 4px 0;
-  border: 0.82px solid #E5E5E5;
+  border: 0.82px solid #e5e5e5;
   padding: 10px 25px;
   background: rgba(220, 232, 254, 0.38);
   border-radius: 6.56px;
@@ -1569,7 +1569,7 @@ ul.dokan-settings-repeatable-list li span.remove-item {
   transform: translate(50%, -50%);
 }
 .field_contents .scl_fields .scl_header .expand_btn .active-social-expend-btn {
-  background: #4CAF4F;
+  background: #4caf4f;
 }
 .field_contents .scl_fields .scl_info {
   background: #fff;
@@ -1638,7 +1638,7 @@ ul.dokan-settings-repeatable-list li span.remove-item {
 .field_contents .scl_fields .scl_info .scl_html fieldset .fields .checked .dashicons-yes {
   display: inline-block;
 }
-.field_contents .scl_fields .scl_info:nth-child(2) {
+.field_contents .scl_fields .scl_info:nth-child( 2 ) {
   margin-top: 15px;
   border-top: 1px solid #f3f4f6;
 }
@@ -1665,10 +1665,10 @@ ul.dokan-settings-repeatable-list li span.remove-item {
   margin: 20px 0;
   max-width: 320px;
 }
-.dokan-settings-field-type-radio fieldset > label:not(:last-child) {
+.dokan-settings-field-type-radio fieldset > label:not( :last-child ) {
   margin-left: 12px !important;
 }
-.dokan-settings-field-type-radio fieldset > label:not(:last-child) > input[type="radio"] {
+.dokan-settings-field-type-radio fieldset > label:not( :last-child ) > input[type='radio'] {
   margin-left: 2px;
 }
 .col-3 {
@@ -1698,7 +1698,7 @@ ul.dokan-settings-repeatable-list li span.remove-item {
 }
 .field_contents fieldset .field select,
   .field_contents fieldset .field textarea,
-  .field_contents fieldset .field input[type=text] {
+  .field_contents fieldset .field input[type='text'] {
     min-height: 28px;
     font-size: 8px;
 }
@@ -1743,8 +1743,8 @@ ul.dokan-settings-repeatable-list li span.remove-item {
   .field_contents .scl_fields .scl_info .scl_text select,
   .field_contents .scl_fields .scl_info .scl_html textarea,
   .field_contents .scl_fields .scl_info .scl_text textarea,
-  .field_contents .scl_fields .scl_info .scl_html input[type=text],
-  .field_contents .scl_fields .scl_info .scl_text input[type=text] {
+  .field_contents .scl_fields .scl_info .scl_html input[type='text'],
+  .field_contents .scl_fields .scl_info .scl_text input[type='text'] {
     font-size: 8px;
     min-height: 28px;
 }
@@ -1752,7 +1752,7 @@ ul.dokan-settings-repeatable-list li span.remove-item {
 @media only screen and (max-width: 768px) {
 .field select,
   .field textarea,
-  .field input[type=text] {
+  .field input[type='text'] {
     max-width: 125px !important;
 }
 .field .small {
